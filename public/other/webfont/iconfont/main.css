@@ -1,0 +1,6902 @@
+/**
+iconfont Webfont
+*/
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot?1516411400536');
+    src: url('iconfont.eot?#iefix-1516411400536') format('embedded-opentype'),
+    url('iconfont.woff2?1516411400536') format('woff2'),
+    url('iconfont.woff?1516411400536') format('woff'),
+    url('iconfont.ttf?1516411400536') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+    font-family: 'iconfont';
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    speak: none;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+[class*=' icon-']:hover, :before, :after {
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+/*
+Glyphs list
+*/
+
+.icon-about:before {
+    content: '\ea01';
+
+}
+
+.icon-about_faq:before {
+    content: '\ea02';
+
+}
+
+.icon-accounting:before {
+    content: '\ea03';
+
+}
+
+.icon-acquisition_graph:before {
+    content: '\ea04';
+
+}
+
+.icon-acquisition_growth:before {
+    content: '\ea05';
+
+}
+
+.icon-action_auction:before {
+    content: '\ea06';
+
+}
+
+.icon-ad_message:before {
+    content: '\ea07';
+
+}
+
+.icon-add:before {
+    content: '\ea08';
+
+}
+
+.icon-add_add:before {
+    content: '\ea09';
+
+}
+
+.icon-add_cart:before {
+    content: '\ea0a';
+
+}
+
+.icon-add_cart_2:before {
+    content: '\ea0b';
+
+}
+
+.icon-add_plus:before {
+    content: '\ea0c';
+
+}
+
+.icon-add_to:before {
+    content: '\ea0d';
+
+}
+
+.icon-ads_advertisement:before {
+    content: '\ea0e';
+
+}
+
+.icon-ads_budget:before {
+    content: '\ea0f';
+
+}
+
+.icon-advertising_marketing:before {
+    content: '\ea10';
+
+}
+
+.icon-affiliate:before {
+    content: '\ea11';
+
+}
+
+.icon-airdrop:before {
+    content: '\ea12';
+
+}
+
+.icon-airline_airplane:before {
+    content: '\ea13';
+
+}
+
+.icon-airline_travel:before {
+    content: '\ea14';
+
+}
+
+.icon-airplane_airline:before {
+    content: '\ea15';
+
+}
+
+.icon-alarm_alert:before {
+    content: '\ea16';
+
+}
+
+.icon-alt:before {
+    content: '\ea17';
+
+}
+
+.icon-american_dollar:before {
+    content: '\ea18';
+
+}
+
+.icon-analitics:before {
+    content: '\ea19';
+
+}
+
+.icon-analitics_6:before {
+    content: '\ea1a';
+
+}
+
+.icon-analitics_7:before {
+    content: '\ea1b';
+
+}
+
+.icon-analityc_coaching:before {
+    content: '\ea1c';
+
+}
+
+.icon-analytics:before {
+    content: '\ea1d';
+
+}
+
+.icon-analytics_analyze:before {
+    content: '\ea1e';
+
+}
+
+.icon-analytics_analyze_2:before {
+    content: '\ea1f';
+
+}
+
+.icon-analytics_dollar:before {
+    content: '\ea20';
+
+}
+
+.icon-analytics_seoperformance:before {
+    content: '\ea21';
+
+}
+
+.icon-apartment_building:before {
+    content: '\ea22';
+
+}
+
+.icon-api_gear:before {
+    content: '\ea23';
+
+}
+
+.icon-approve:before {
+    content: '\ea24';
+
+}
+
+.icon-approved_stamp:before {
+    content: '\ea25';
+
+}
+
+.icon-architectural:before {
+    content: '\ea26';
+
+}
+
+.icon-architecture:before {
+    content: '\ea27';
+
+}
+
+.icon-archive_box:before {
+    content: '\ea28';
+
+}
+
+.icon-archive_box_3:before {
+    content: '\ea29';
+
+}
+
+.icon-archive_box_4:before {
+    content: '\ea2a';
+
+}
+
+.icon-archive_box_5:before {
+    content: '\ea2b';
+
+}
+
+.icon-archive_file:before {
+    content: '\ea2c';
+
+}
+
+.icon-around_the:before {
+    content: '\ea2d';
+
+}
+
+.icon-arrow_ad:before {
+    content: '\ea2e';
+
+}
+
+.icon-arrow_bars:before {
+    content: '\ea2f';
+
+}
+
+.icon-arrow_chevron:before {
+    content: '\ea30';
+
+}
+
+.icon-arrow_down:before {
+    content: '\ea31';
+
+}
+
+.icon-arrow_hands:before {
+    content: '\ea32';
+
+}
+
+.icon-arrow_up:before {
+    content: '\ea33';
+
+}
+
+.icon-arrow_up_4:before {
+    content: '\ea34';
+
+}
+
+.icon-arrow_up_7:before {
+    content: '\ea35';
+
+}
+
+.icon-arrow_up_8:before {
+    content: '\ea36';
+
+}
+
+.icon-arrow_up_9:before {
+    content: '\ea37';
+
+}
+
+.icon-arrows:before {
+    content: '\ea38';
+
+}
+
+.icon-arrows_down:before {
+    content: '\ea39';
+
+}
+
+.icon-arrows_left:before {
+    content: '\ea3a';
+
+}
+
+.icon-arrows_money:before {
+    content: '\ea3b';
+
+}
+
+.icon-arrows_next:before {
+    content: '\ea3c';
+
+}
+
+.icon-arrows_up:before {
+    content: '\ea3d';
+
+}
+
+.icon-arrows_up_4:before {
+    content: '\ea3e';
+
+}
+
+.icon-atm:before {
+    content: '\ea3f';
+
+}
+
+.icon-atm_2:before {
+    content: '\ea40';
+
+}
+
+.icon-atm_machine:before {
+    content: '\ea41';
+
+}
+
+.icon-atm_transaction:before {
+    content: '\ea42';
+
+}
+
+.icon-audience_chart:before {
+    content: '\ea43';
+
+}
+
+.icon-audience_growth:before {
+    content: '\ea44';
+
+}
+
+.icon-audience_people:before {
+    content: '\ea45';
+
+}
+
+.icon-audience_trends:before {
+    content: '\ea46';
+
+}
+
+.icon-auto_financing:before {
+    content: '\ea47';
+
+}
+
+.icon-auto_loan:before {
+    content: '\ea48';
+
+}
+
+.icon-automatic_teller:before {
+    content: '\ea49';
+
+}
+
+.icon-automation_power:before {
+    content: '\ea4a';
+
+}
+
+.icon-award_ribbon:before {
+    content: '\ea4b';
+
+}
+
+.icon-award_ribbon_9:before {
+    content: '\ea4c';
+
+}
+
+.icon-baby_carriage:before {
+    content: '\ea4d';
+
+}
+
+.icon-backpack:before {
+    content: '\ea4e';
+
+}
+
+.icon-bag:before {
+    content: '\ea4f';
+
+}
+
+.icon-bag_dollar:before {
+    content: '\ea50';
+
+}
+
+.icon-bag_outlined:before {
+    content: '\ea51';
+
+}
+
+.icon-baggage:before {
+    content: '\ea52';
+
+}
+
+.icon-balance:before {
+    content: '\ea53';
+
+}
+
+.icon-ban:before {
+    content: '\ea54';
+
+}
+
+.icon-bank:before {
+    content: '\ea55';
+
+}
+
+.icon-bank_banking:before {
+    content: '\ea56';
+
+}
+
+.icon-bank_building:before {
+    content: '\ea57';
+
+}
+
+.icon-bank_check:before {
+    content: '\ea58';
+
+}
+
+.icon-bank_court:before {
+    content: '\ea59';
+
+}
+
+.icon-bank_dollar:before {
+    content: '\ea5a';
+
+}
+
+.icon-bank_euro:before {
+    content: '\ea5b';
+
+}
+
+.icon-bank_finance:before {
+    content: '\ea5c';
+
+}
+
+.icon-bank_service:before {
+    content: '\ea5d';
+
+}
+
+.icon-bank_temple:before {
+    content: '\ea5e';
+
+}
+
+.icon-bankign_bank:before {
+    content: '\ea5f';
+
+}
+
+.icon-bankign_note:before {
+    content: '\ea60';
+
+}
+
+.icon-banking:before {
+    content: '\ea61';
+
+}
+
+.icon-banking_arrow:before {
+    content: '\ea62';
+
+}
+
+.icon-banking_arrow_6:before {
+    content: '\ea63';
+
+}
+
+.icon-banking_arrows:before {
+    content: '\ea64';
+
+}
+
+.icon-banking_bank:before {
+    content: '\ea65';
+
+}
+
+.icon-banking_bank_10:before {
+    content: '\ea66';
+
+}
+
+.icon-banking_bank_11:before {
+    content: '\ea67';
+
+}
+
+.icon-banking_bank_12:before {
+    content: '\ea68';
+
+}
+
+.icon-banking_bank_6:before {
+    content: '\ea69';
+
+}
+
+.icon-banking_bank_7:before {
+    content: '\ea6a';
+
+}
+
+.icon-banking_bank_8:before {
+    content: '\ea6b';
+
+}
+
+.icon-banking_bank_9:before {
+    content: '\ea6c';
+
+}
+
+.icon-banking_board:before {
+    content: '\ea6d';
+
+}
+
+.icon-banking_business:before {
+    content: '\ea6e';
+
+}
+
+.icon-banking_business_4:before {
+    content: '\ea6f';
+
+}
+
+.icon-banking_cell:before {
+    content: '\ea70';
+
+}
+
+.icon-banking_document:before {
+    content: '\ea71';
+
+}
+
+.icon-banking_yen:before {
+    content: '\ea72';
+
+}
+
+.icon-banner_euro:before {
+    content: '\ea73';
+
+}
+
+.icon-bar_charts:before {
+    content: '\ea74';
+
+}
+
+.icon-bar_code:before {
+    content: '\ea75';
+
+}
+
+.icon-bar_code_6:before {
+    content: '\ea76';
+
+}
+
+.icon-bar_graph:before {
+    content: '\ea77';
+
+}
+
+.icon-barber_shop:before {
+    content: '\ea78';
+
+}
+
+.icon-barcode:before {
+    content: '\ea79';
+
+}
+
+.icon-barcode_scanner:before {
+    content: '\ea7a';
+
+}
+
+.icon-barcode_verified:before {
+    content: '\ea7b';
+
+}
+
+.icon-barn:before {
+    content: '\ea7c';
+
+}
+
+.icon-bars_data:before {
+    content: '\ea7d';
+
+}
+
+.icon-bars_data_11:before {
+    content: '\ea7e';
+
+}
+
+.icon-bars_data_12:before {
+    content: '\ea7f';
+
+}
+
+.icon-bars_data_14:before {
+    content: '\ea80';
+
+}
+
+.icon-bars_house:before {
+    content: '\ea81';
+
+}
+
+.icon-bars_up:before {
+    content: '\ea82';
+
+}
+
+.icon-bars_web:before {
+    content: '\ea83';
+
+}
+
+.icon-basket:before {
+    content: '\ea84';
+
+}
+
+.icon-basket_12:before {
+    content: '\ea85';
+
+}
+
+.icon-basket_add:before {
+    content: '\ea86';
+
+}
+
+.icon-basket_cart:before {
+    content: '\ea87';
+
+}
+
+.icon-basket_delete:before {
+    content: '\ea88';
+
+}
+
+.icon-basket_empty:before {
+    content: '\ea89';
+
+}
+
+.icon-bathrooms:before {
+    content: '\ea8a';
+
+}
+
+.icon-bear:before {
+    content: '\ea8b';
+
+}
+
+.icon-benchmarking_business:before {
+    content: '\ea8c';
+
+}
+
+.icon-bill:before {
+    content: '\ea8d';
+
+}
+
+.icon-bill_dollar:before {
+    content: '\ea8e';
+
+}
+
+.icon-billboard:before {
+    content: '\ea8f';
+
+}
+
+.icon-billing:before {
+    content: '\ea90';
+
+}
+
+.icon-billion:before {
+    content: '\ea91';
+
+}
+
+.icon-binder:before {
+    content: '\ea92';
+
+}
+
+.icon-bitcoin:before {
+    content: '\ea93';
+
+}
+
+.icon-board_arrows:before {
+    content: '\ea94';
+
+}
+
+.icon-board_presentation:before {
+    content: '\ea95';
+
+}
+
+.icon-bookmark_favorite:before {
+    content: '\ea96';
+
+}
+
+.icon-bottle:before {
+    content: '\ea97';
+
+}
+
+.icon-box:before {
+    content: '\ea98';
+
+}
+
+.icon-box_b:before {
+    content: '\ea99';
+
+}
+
+.icon-box_d:before {
+    content: '\ea9a';
+
+}
+
+.icon-box_d_3:before {
+    content: '\ea9b';
+
+}
+
+.icon-box_d_4:before {
+    content: '\ea9c';
+
+}
+
+.icon-box_in:before {
+    content: '\ea9d';
+
+}
+
+.icon-box_open:before {
+    content: '\ea9e';
+
+}
+
+.icon-box_out:before {
+    content: '\ea9f';
+
+}
+
+.icon-box_ship:before {
+    content: '\eaa0';
+
+}
+
+.icon-bridge:before {
+    content: '\eaa1';
+
+}
+
+.icon-briefcase:before {
+    content: '\eaa2';
+
+}
+
+.icon-briefcase_case:before {
+    content: '\eaa3';
+
+}
+
+.icon-briefcase_case_16:before {
+    content: '\eaa4';
+
+}
+
+.icon-briefcase_case_19:before {
+    content: '\eaa5';
+
+}
+
+.icon-briefcase_person:before {
+    content: '\eaa6';
+
+}
+
+.icon-briefcase_pie:before {
+    content: '\eaa7';
+
+}
+
+.icon-briefcase_user:before {
+    content: '\eaa8';
+
+}
+
+.icon-briefcase_work:before {
+    content: '\eaa9';
+
+}
+
+.icon-briefcase_work_15:before {
+    content: '\eaaa';
+
+}
+
+.icon-briefcase_yen:before {
+    content: '\eaab';
+
+}
+
+.icon-brilliant_idea:before {
+    content: '\eaac';
+
+}
+
+.icon-broken_box:before {
+    content: '\eaad';
+
+}
+
+.icon-broken_glass:before {
+    content: '\eaae';
+
+}
+
+.icon-bubble_chat:before {
+    content: '\eaaf';
+
+}
+
+.icon-building:before {
+    content: '\eab0';
+
+}
+
+.icon-building_construction:before {
+    content: '\eab1';
+
+}
+
+.icon-bull:before {
+    content: '\eab2';
+
+}
+
+.icon-bus:before {
+    content: '\eab3';
+
+}
+
+.icon-business:before {
+    content: '\eab4';
+
+}
+
+.icon-business_analytics:before {
+    content: '\eab5';
+
+}
+
+.icon-business_briefcase:before {
+    content: '\eab6';
+
+}
+
+.icon-business_briefcase_17:before {
+    content: '\eab7';
+
+}
+
+.icon-business_card:before {
+    content: '\eab8';
+
+}
+
+.icon-business_cash:before {
+    content: '\eab9';
+
+}
+
+.icon-business_chart:before {
+    content: '\eaba';
+
+}
+
+.icon-business_finance:before {
+    content: '\eabb';
+
+}
+
+.icon-business_goal:before {
+    content: '\eabc';
+
+}
+
+.icon-business_growth:before {
+    content: '\eabd';
+
+}
+
+.icon-business_letter:before {
+    content: '\eabe';
+
+}
+
+.icon-business_letter_10:before {
+    content: '\eabf';
+
+}
+
+.icon-business_loan:before {
+    content: '\eac0';
+
+}
+
+.icon-business_location:before {
+    content: '\eac1';
+
+}
+
+.icon-business_mind:before {
+    content: '\eac2';
+
+}
+
+.icon-business_mind_13:before {
+    content: '\eac3';
+
+}
+
+.icon-business_people:before {
+    content: '\eac4';
+
+}
+
+.icon-business_person:before {
+    content: '\eac5';
+
+}
+
+.icon-business_person_16:before {
+    content: '\eac6';
+
+}
+
+.icon-business_revenue:before {
+    content: '\eac7';
+
+}
+
+.icon-business_revenue_15:before {
+    content: '\eac8';
+
+}
+
+.icon-business_strategy:before {
+    content: '\eac9';
+
+}
+
+.icon-business_target:before {
+    content: '\eaca';
+
+}
+
+.icon-business_yoyo:before {
+    content: '\eacb';
+
+}
+
+.icon-businessman_time:before {
+    content: '\eacc';
+
+}
+
+.icon-businessmen_management:before {
+    content: '\eacd';
+
+}
+
+.icon-buttons_cancel:before {
+    content: '\eace';
+
+}
+
+.icon-buy:before {
+    content: '\eacf';
+
+}
+
+.icon-buy_a:before {
+    content: '\ead0';
+
+}
+
+.icon-buy_b:before {
+    content: '\ead1';
+
+}
+
+.icon-buy_c:before {
+    content: '\ead2';
+
+}
+
+.icon-buy_with:before {
+    content: '\ead3';
+
+}
+
+.icon-buyer:before {
+    content: '\ead4';
+
+}
+
+.icon-buyer_bag:before {
+    content: '\ead5';
+
+}
+
+.icon-buzz_call:before {
+    content: '\ead6';
+
+}
+
+.icon-calculations:before {
+    content: '\ead7';
+
+}
+
+.icon-calculator:before {
+    content: '\ead8';
+
+}
+
+.icon-calculator_19:before {
+    content: '\ead9';
+
+}
+
+.icon-calculator_math:before {
+    content: '\eada';
+
+}
+
+.icon-calculator_numbers:before {
+    content: '\eadb';
+
+}
+
+.icon-calendar:before {
+    content: '\eadc';
+
+}
+
+.icon-calendar_clock:before {
+    content: '\eadd';
+
+}
+
+.icon-calendar_schedule:before {
+    content: '\eade';
+
+}
+
+.icon-call_telephone:before {
+    content: '\eadf';
+
+}
+
+.icon-camera:before {
+    content: '\eae0';
+
+}
+
+.icon-camping_outdoors:before {
+    content: '\eae1';
+
+}
+
+.icon-camping_tent:before {
+    content: '\eae2';
+
+}
+
+.icon-cancel:before {
+    content: '\eae3';
+
+}
+
+.icon-capital_gains:before {
+    content: '\eae4';
+
+}
+
+.icon-capital_investment:before {
+    content: '\eae5';
+
+}
+
+.icon-car_loan:before {
+    content: '\eae6';
+
+}
+
+.icon-car_taxi:before {
+    content: '\eae7';
+
+}
+
+.icon-card_file:before {
+    content: '\eae8';
+
+}
+
+.icon-card_payment:before {
+    content: '\eae9';
+
+}
+
+.icon-cards_c:before {
+    content: '\eaea';
+
+}
+
+.icon-cards_d:before {
+    content: '\eaeb';
+
+}
+
+.icon-cards_e:before {
+    content: '\eaec';
+
+}
+
+.icon-cart:before {
+    content: '\eaed';
+
+}
+
+.icon-cart_22:before {
+    content: '\eaee';
+
+}
+
+.icon-cart_23:before {
+    content: '\eaef';
+
+}
+
+.icon-cart_basket:before {
+    content: '\eaf0';
+
+}
+
+.icon-cart_remove:before {
+    content: '\eaf1';
+
+}
+
+.icon-cart_shopping:before {
+    content: '\eaf2';
+
+}
+
+.icon-case:before {
+    content: '\eaf3';
+
+}
+
+.icon-case_briefcase:before {
+    content: '\eaf4';
+
+}
+
+.icon-case_professional:before {
+    content: '\eaf5';
+
+}
+
+.icon-cases:before {
+    content: '\eaf6';
+
+}
+
+.icon-cash:before {
+    content: '\eaf7';
+
+}
+
+.icon-cash_a:before {
+    content: '\eaf8';
+
+}
+
+.icon-cash_b:before {
+    content: '\eaf9';
+
+}
+
+.icon-cash_bag:before {
+    content: '\eafa';
+
+}
+
+.icon-cash_bands:before {
+    content: '\eafb';
+
+}
+
+.icon-cash_bill:before {
+    content: '\eafc';
+
+}
+
+.icon-cash_coin:before {
+    content: '\eafd';
+
+}
+
+.icon-cash_dispenser:before {
+    content: '\eafe';
+
+}
+
+.icon-cash_dollar:before {
+    content: '\eaff';
+
+}
+
+.icon-cash_focus:before {
+    content: '\eb00';
+
+}
+
+.icon-cash_money:before {
+    content: '\eb01';
+
+}
+
+.icon-cash_payment:before {
+    content: '\eb02';
+
+}
+
+.icon-cash_register:before {
+    content: '\eb03';
+
+}
+
+.icon-cash_stack:before {
+    content: '\eb04';
+
+}
+
+.icon-cashier:before {
+    content: '\eb05';
+
+}
+
+.icon-cashier_20:before {
+    content: '\eb06';
+
+}
+
+.icon-castle:before {
+    content: '\eb07';
+
+}
+
+.icon-categories_grid:before {
+    content: '\eb08';
+
+}
+
+.icon-cathedral:before {
+    content: '\eb09';
+
+}
+
+.icon-cell_phone:before {
+    content: '\eb0a';
+
+}
+
+.icon-cell_phone_16:before {
+    content: '\eb0b';
+
+}
+
+.icon-cell_phone_17:before {
+    content: '\eb0c';
+
+}
+
+.icon-cell_phone_18:before {
+    content: '\eb0d';
+
+}
+
+.icon-cell_phone_25:before {
+    content: '\eb0e';
+
+}
+
+.icon-cell_phone_26:before {
+    content: '\eb0f';
+
+}
+
+.icon-cemetry:before {
+    content: '\eb10';
+
+}
+
+.icon-ceo_macbook:before {
+    content: '\eb11';
+
+}
+
+.icon-certificate:before {
+    content: '\eb12';
+
+}
+
+.icon-change:before {
+    content: '\eb13';
+
+}
+
+.icon-chart_arrow:before {
+    content: '\eb14';
+
+}
+
+.icon-chart_bars:before {
+    content: '\eb15';
+
+}
+
+.icon-chart_device:before {
+    content: '\eb16';
+
+}
+
+.icon-chart_graph:before {
+    content: '\eb17';
+
+}
+
+.icon-chart_online:before {
+    content: '\eb18';
+
+}
+
+.icon-chart_presentation:before {
+    content: '\eb19';
+
+}
+
+.icon-chart_presentation_23:before {
+    content: '\eb1a';
+
+}
+
+.icon-chart_presentation_24:before {
+    content: '\eb1b';
+
+}
+
+.icon-chart_presentation_25:before {
+    content: '\eb1c';
+
+}
+
+.icon-chart_presentation_26:before {
+    content: '\eb1d';
+
+}
+
+.icon-chart_presentation_27:before {
+    content: '\eb1e';
+
+}
+
+.icon-chart_report:before {
+    content: '\eb1f';
+
+}
+
+.icon-chart_stock:before {
+    content: '\eb20';
+
+}
+
+.icon-chart_stock_26:before {
+    content: '\eb21';
+
+}
+
+.icon-chart_up:before {
+    content: '\eb22';
+
+}
+
+.icon-charts:before {
+    content: '\eb23';
+
+}
+
+.icon-chat_communication:before {
+    content: '\eb24';
+
+}
+
+.icon-chat_conversation:before {
+    content: '\eb25';
+
+}
+
+.icon-chat_talk:before {
+    content: '\eb26';
+
+}
+
+.icon-chat_talking:before {
+    content: '\eb27';
+
+}
+
+.icon-check:before {
+    content: '\eb28';
+
+}
+
+.icon-check_banking:before {
+    content: '\eb29';
+
+}
+
+.icon-check_in:before {
+    content: '\eb2a';
+
+}
+
+.icon-check_list:before {
+    content: '\eb2b';
+
+}
+
+.icon-check_mark:before {
+    content: '\eb2c';
+
+}
+
+.icon-check_mark_18:before {
+    content: '\eb2d';
+
+}
+
+.icon-check_mark_19:before {
+    content: '\eb2e';
+
+}
+
+.icon-check_mark_20:before {
+    content: '\eb2f';
+
+}
+
+.icon-check_mark_21:before {
+    content: '\eb30';
+
+}
+
+.icon-check_mark_23:before {
+    content: '\eb31';
+
+}
+
+.icon-check_mark_33:before {
+    content: '\eb32';
+
+}
+
+.icon-check_mark_9:before {
+    content: '\eb33';
+
+}
+
+.icon-check_money:before {
+    content: '\eb34';
+
+}
+
+.icon-check_ok:before {
+    content: '\eb35';
+
+}
+
+.icon-check_out:before {
+    content: '\eb36';
+
+}
+
+.icon-check_pen:before {
+    content: '\eb37';
+
+}
+
+.icon-checklist:before {
+    content: '\eb38';
+
+}
+
+.icon-checkout:before {
+    content: '\eb39';
+
+}
+
+.icon-chemical_plant:before {
+    content: '\eb3a';
+
+}
+
+.icon-cheque:before {
+    content: '\eb3b';
+
+}
+
+.icon-chess:before {
+    content: '\eb3c';
+
+}
+
+.icon-chinese_temple:before {
+    content: '\eb3d';
+
+}
+
+.icon-church:before {
+    content: '\eb3e';
+
+}
+
+.icon-church_religion:before {
+    content: '\eb3f';
+
+}
+
+.icon-cigarette:before {
+    content: '\eb40';
+
+}
+
+.icon-circus_tent:before {
+    content: '\eb41';
+
+}
+
+.icon-city:before {
+    content: '\eb42';
+
+}
+
+.icon-clerk_office:before {
+    content: '\eb43';
+
+}
+
+.icon-click_find:before {
+    content: '\eb44';
+
+}
+
+.icon-click_web:before {
+    content: '\eb45';
+
+}
+
+.icon-clipboard:before {
+    content: '\eb46';
+
+}
+
+.icon-clipboard_notes:before {
+    content: '\eb47';
+
+}
+
+.icon-clipboard_pencil:before {
+    content: '\eb48';
+
+}
+
+.icon-cloakroom:before {
+    content: '\eb49';
+
+}
+
+.icon-clock:before {
+    content: '\eb4a';
+
+}
+
+.icon-clock_time:before {
+    content: '\eb4b';
+
+}
+
+.icon-clock_tower:before {
+    content: '\eb4c';
+
+}
+
+.icon-close:before {
+    content: '\eb4d';
+
+}
+
+.icon-closed:before {
+    content: '\eb4e';
+
+}
+
+.icon-closeout_sale:before {
+    content: '\eb4f';
+
+}
+
+.icon-clothes:before {
+    content: '\eb50';
+
+}
+
+.icon-clothes_hanger:before {
+    content: '\eb51';
+
+}
+
+.icon-cloud_earning:before {
+    content: '\eb52';
+
+}
+
+.icon-code_program:before {
+    content: '\eb53';
+
+}
+
+.icon-code_script:before {
+    content: '\eb54';
+
+}
+
+.icon-cogs:before {
+    content: '\eb55';
+
+}
+
+.icon-coin:before {
+    content: '\eb56';
+
+}
+
+.icon-coin_30:before {
+    content: '\eb57';
+
+}
+
+.icon-coin_31:before {
+    content: '\eb58';
+
+}
+
+.icon-coin_pay:before {
+    content: '\eb59';
+
+}
+
+.icon-coin_piggy:before {
+    content: '\eb5a';
+
+}
+
+.icon-coin_purse:before {
+    content: '\eb5b';
+
+}
+
+.icon-coin_toss:before {
+    content: '\eb5c';
+
+}
+
+.icon-coin_toss_33:before {
+    content: '\eb5d';
+
+}
+
+.icon-coin_yen:before {
+    content: '\eb5e';
+
+}
+
+.icon-coins:before {
+    content: '\eb5f';
+
+}
+
+.icon-coins_35:before {
+    content: '\eb60';
+
+}
+
+.icon-coins_alt:before {
+    content: '\eb61';
+
+}
+
+.icon-coins_coin:before {
+    content: '\eb62';
+
+}
+
+.icon-coins_money:before {
+    content: '\eb63';
+
+}
+
+.icon-collumn_graph:before {
+    content: '\eb64';
+
+}
+
+.icon-colosseum:before {
+    content: '\eb65';
+
+}
+
+.icon-column:before {
+    content: '\eb66';
+
+}
+
+.icon-column_chart:before {
+    content: '\eb67';
+
+}
+
+.icon-commercial:before {
+    content: '\eb68';
+
+}
+
+.icon-company:before {
+    content: '\eb69';
+
+}
+
+.icon-company_corporation:before {
+    content: '\eb6a';
+
+}
+
+.icon-company_corporation_3:before {
+    content: '\eb6b';
+
+}
+
+.icon-company_house:before {
+    content: '\eb6c';
+
+}
+
+.icon-company_house_4:before {
+    content: '\eb6d';
+
+}
+
+.icon-company_house_5:before {
+    content: '\eb6e';
+
+}
+
+.icon-company_mall:before {
+    content: '\eb6f';
+
+}
+
+.icon-compliance_clipboard:before {
+    content: '\eb70';
+
+}
+
+.icon-computer_dollar:before {
+    content: '\eb71';
+
+}
+
+.icon-computer_screen:before {
+    content: '\eb72';
+
+}
+
+.icon-computer_screen_20:before {
+    content: '\eb73';
+
+}
+
+.icon-computer_stats:before {
+    content: '\eb74';
+
+}
+
+.icon-conference_presentation:before {
+    content: '\eb75';
+
+}
+
+.icon-confidential:before {
+    content: '\eb76';
+
+}
+
+.icon-confirm:before {
+    content: '\eb77';
+
+}
+
+.icon-connect:before {
+    content: '\eb78';
+
+}
+
+.icon-connect_bankers:before {
+    content: '\eb79';
+
+}
+
+.icon-connect_dollar:before {
+    content: '\eb7a';
+
+}
+
+.icon-connection_data:before {
+    content: '\eb7b';
+
+}
+
+.icon-connections:before {
+    content: '\eb7c';
+
+}
+
+.icon-construction:before {
+    content: '\eb7d';
+
+}
+
+.icon-contract:before {
+    content: '\eb7e';
+
+}
+
+.icon-contract_page:before {
+    content: '\eb7f';
+
+}
+
+.icon-corporation_chart:before {
+    content: '\eb80';
+
+}
+
+.icon-corporation_company:before {
+    content: '\eb81';
+
+}
+
+.icon-coupon:before {
+    content: '\eb82';
+
+}
+
+.icon-crane_hook:before {
+    content: '\eb83';
+
+}
+
+.icon-crate:before {
+    content: '\eb84';
+
+}
+
+.icon-crate_closed:before {
+    content: '\eb85';
+
+}
+
+.icon-crate_contents:before {
+    content: '\eb86';
+
+}
+
+.icon-crate_downwards:before {
+    content: '\eb87';
+
+}
+
+.icon-crate_open:before {
+    content: '\eb88';
+
+}
+
+.icon-crate_upwards:before {
+    content: '\eb89';
+
+}
+
+.icon-credit:before {
+    content: '\eb8a';
+
+}
+
+.icon-credit_card:before {
+    content: '\eb8b';
+
+}
+
+.icon-credit_card_11:before {
+    content: '\eb8c';
+
+}
+
+.icon-credit_card_17:before {
+    content: '\eb8d';
+
+}
+
+.icon-credit_card_37:before {
+    content: '\eb8e';
+
+}
+
+.icon-credit_card_38:before {
+    content: '\eb8f';
+
+}
+
+.icon-credit_card_39:before {
+    content: '\eb90';
+
+}
+
+.icon-credit_card_40:before {
+    content: '\eb91';
+
+}
+
+.icon-credit_card_41:before {
+    content: '\eb92';
+
+}
+
+.icon-credit_card_42:before {
+    content: '\eb93';
+
+}
+
+.icon-credit_cards:before {
+    content: '\eb94';
+
+}
+
+.icon-credit_cart:before {
+    content: '\eb95';
+
+}
+
+.icon-credit_cut:before {
+    content: '\eb96';
+
+}
+
+.icon-credit_debit:before {
+    content: '\eb97';
+
+}
+
+.icon-creditc_card:before {
+    content: '\eb98';
+
+}
+
+.icon-creditcards:before {
+    content: '\eb99';
+
+}
+
+.icon-crm:before {
+    content: '\eb9a';
+
+}
+
+.icon-cross_x:before {
+    content: '\eb9b';
+
+}
+
+.icon-currency:before {
+    content: '\eb9c';
+
+}
+
+.icon-currency_diagram:before {
+    content: '\eb9d';
+
+}
+
+.icon-currency_exchance:before {
+    content: '\eb9e';
+
+}
+
+.icon-currency_gear:before {
+    content: '\eb9f';
+
+}
+
+.icon-currency_pie:before {
+    content: '\eba0';
+
+}
+
+.icon-currency_trends:before {
+    content: '\eba1';
+
+}
+
+.icon-current_account:before {
+    content: '\eba2';
+
+}
+
+.icon-current_assets:before {
+    content: '\eba3';
+
+}
+
+.icon-customer:before {
+    content: '\eba4';
+
+}
+
+.icon-customer_group:before {
+    content: '\eba5';
+
+}
+
+.icon-customer_person:before {
+    content: '\eba6';
+
+}
+
+.icon-customer_rating:before {
+    content: '\eba7';
+
+}
+
+.icon-customer_rating_10:before {
+    content: '\eba8';
+
+}
+
+.icon-customer_rating_11:before {
+    content: '\eba9';
+
+}
+
+.icon-customer_service:before {
+    content: '\ebaa';
+
+}
+
+.icon-customer_service_13:before {
+    content: '\ebab';
+
+}
+
+.icon-customer_service_14:before {
+    content: '\ebac';
+
+}
+
+.icon-customer_survey:before {
+    content: '\ebad';
+
+}
+
+.icon-customers:before {
+    content: '\ebae';
+
+}
+
+.icon-customs:before {
+    content: '\ebaf';
+
+}
+
+.icon-cutting_cut:before {
+    content: '\ebb0';
+
+}
+
+.icon-data_bars:before {
+    content: '\ebb1';
+
+}
+
+.icon-data_down:before {
+    content: '\ebb2';
+
+}
+
+.icon-deadline:before {
+    content: '\ebb3';
+
+}
+
+.icon-decrease:before {
+    content: '\ebb4';
+
+}
+
+.icon-decreasing_stats:before {
+    content: '\ebb5';
+
+}
+
+.icon-delete:before {
+    content: '\ebb6';
+
+}
+
+.icon-delete_bag:before {
+    content: '\ebb7';
+
+}
+
+.icon-delete_cart:before {
+    content: '\ebb8';
+
+}
+
+.icon-deliver_heavy:before {
+    content: '\ebb9';
+
+}
+
+.icon-deliver_items:before {
+    content: '\ebba';
+
+}
+
+.icon-delivery_box:before {
+    content: '\ebbb';
+
+}
+
+.icon-delivery_product:before {
+    content: '\ebbc';
+
+}
+
+.icon-demography_diagram:before {
+    content: '\ebbd';
+
+}
+
+.icon-deposit_safe:before {
+    content: '\ebbe';
+
+}
+
+.icon-destination_globe:before {
+    content: '\ebbf';
+
+}
+
+.icon-destination_map:before {
+    content: '\ebc0';
+
+}
+
+.icon-details:before {
+    content: '\ebc1';
+
+}
+
+.icon-development:before {
+    content: '\ebc2';
+
+}
+
+.icon-diamond:before {
+    content: '\ebc3';
+
+}
+
+.icon-diploma:before {
+    content: '\ebc4';
+
+}
+
+.icon-discount_coupon:before {
+    content: '\ebc5';
+
+}
+
+.icon-discount_map:before {
+    content: '\ebc6';
+
+}
+
+.icon-discount_sticker:before {
+    content: '\ebc7';
+
+}
+
+.icon-discount_stickers:before {
+    content: '\ebc8';
+
+}
+
+.icon-discounts:before {
+    content: '\ebc9';
+
+}
+
+.icon-discuss:before {
+    content: '\ebca';
+
+}
+
+.icon-disk_diskette:before {
+    content: '\ebcb';
+
+}
+
+.icon-do_not:before {
+    content: '\ebcc';
+
+}
+
+.icon-document_chart:before {
+    content: '\ebcd';
+
+}
+
+.icon-document_edit:before {
+    content: '\ebce';
+
+}
+
+.icon-document_page:before {
+    content: '\ebcf';
+
+}
+
+.icon-documents:before {
+    content: '\ebd0';
+
+}
+
+.icon-documents_file:before {
+    content: '\ebd1';
+
+}
+
+.icon-dog:before {
+    content: '\ebd2';
+
+}
+
+.icon-dollar:before {
+    content: '\ebd3';
+
+}
+
+.icon-dollar_34:before {
+    content: '\ebd4';
+
+}
+
+.icon-dollar_bag:before {
+    content: '\ebd5';
+
+}
+
+.icon-dollar_bars:before {
+    content: '\ebd6';
+
+}
+
+.icon-dollar_coin:before {
+    content: '\ebd7';
+
+}
+
+.icon-dollar_coin_36:before {
+    content: '\ebd8';
+
+}
+
+.icon-dollar_coins:before {
+    content: '\ebd9';
+
+}
+
+.icon-dollar_currency:before {
+    content: '\ebda';
+
+}
+
+.icon-dollar_diagram:before {
+    content: '\ebdb';
+
+}
+
+.icon-dollar_euro:before {
+    content: '\ebdc';
+
+}
+
+.icon-dollar_head:before {
+    content: '\ebdd';
+
+}
+
+.icon-dollar_house:before {
+    content: '\ebde';
+
+}
+
+.icon-dollar_house_15:before {
+    content: '\ebdf';
+
+}
+
+.icon-dollar_house_16:before {
+    content: '\ebe0';
+
+}
+
+.icon-dollar_lock:before {
+    content: '\ebe1';
+
+}
+
+.icon-dollar_phone:before {
+    content: '\ebe2';
+
+}
+
+.icon-dollar_sign:before {
+    content: '\ebe3';
+
+}
+
+.icon-dollar_sign_16:before {
+    content: '\ebe4';
+
+}
+
+.icon-dollar_sign_24:before {
+    content: '\ebe5';
+
+}
+
+.icon-dollar_sign_25:before {
+    content: '\ebe6';
+
+}
+
+.icon-dollar_sign_26:before {
+    content: '\ebe7';
+
+}
+
+.icon-dollar_sign_27:before {
+    content: '\ebe8';
+
+}
+
+.icon-dollar_sign_32:before {
+    content: '\ebe9';
+
+}
+
+.icon-dollar_sign_33:before {
+    content: '\ebea';
+
+}
+
+.icon-dollar_signs:before {
+    content: '\ebeb';
+
+}
+
+.icon-dollarbill:before {
+    content: '\ebec';
+
+}
+
+.icon-dome:before {
+    content: '\ebed';
+
+}
+
+.icon-door:before {
+    content: '\ebee';
+
+}
+
+.icon-down:before {
+    content: '\ebef';
+
+}
+
+.icon-drink:before {
+    content: '\ebf0';
+
+}
+
+.icon-dropping_chart:before {
+    content: '\ebf1';
+
+}
+
+.icon-earnings:before {
+    content: '\ebf2';
+
+}
+
+.icon-earth:before {
+    content: '\ebf3';
+
+}
+
+.icon-earth_globe:before {
+    content: '\ebf4';
+
+}
+
+.icon-eat:before {
+    content: '\ebf5';
+
+}
+
+.icon-edit:before {
+    content: '\ebf6';
+
+}
+
+.icon-eifel_tower:before {
+    content: '\ebf7';
+
+}
+
+.icon-elevator:before {
+    content: '\ebf8';
+
+}
+
+.icon-embassy:before {
+    content: '\ebf9';
+
+}
+
+.icon-emergency_clinic:before {
+    content: '\ebfa';
+
+}
+
+.icon-empty_safe:before {
+    content: '\ebfb';
+
+}
+
+.icon-envelope:before {
+    content: '\ebfc';
+
+}
+
+.icon-epic_fail:before {
+    content: '\ebfd';
+
+}
+
+.icon-error_wrong:before {
+    content: '\ebfe';
+
+}
+
+.icon-eruo_bag:before {
+    content: '\ebff';
+
+}
+
+.icon-escalator_down:before {
+    content: '\ec00';
+
+}
+
+.icon-escalator_up:before {
+    content: '\ec01';
+
+}
+
+.icon-eshop:before {
+    content: '\ec02';
+
+}
+
+.icon-eskimo:before {
+    content: '\ec03';
+
+}
+
+.icon-euro:before {
+    content: '\ec04';
+
+}
+
+.icon-euro_40:before {
+    content: '\ec05';
+
+}
+
+.icon-euro_bars:before {
+    content: '\ec06';
+
+}
+
+.icon-euro_coin:before {
+    content: '\ec07';
+
+}
+
+.icon-euro_coin_42:before {
+    content: '\ec08';
+
+}
+
+.icon-euro_house:before {
+    content: '\ec09';
+
+}
+
+.icon-euro_pro:before {
+    content: '\ec0a';
+
+}
+
+.icon-euro_sign:before {
+    content: '\ec0b';
+
+}
+
+.icon-euro_sign_19:before {
+    content: '\ec0c';
+
+}
+
+.icon-euro_sign_21:before {
+    content: '\ec0d';
+
+}
+
+.icon-euro_sign_27:before {
+    content: '\ec0e';
+
+}
+
+.icon-euro_sign_28:before {
+    content: '\ec0f';
+
+}
+
+.icon-euro_sign_29:before {
+    content: '\ec10';
+
+}
+
+.icon-euro_sign_30:before {
+    content: '\ec11';
+
+}
+
+.icon-euro_sign_43:before {
+    content: '\ec12';
+
+}
+
+.icon-excavator_construction:before {
+    content: '\ec13';
+
+}
+
+.icon-exchange:before {
+    content: '\ec14';
+
+}
+
+.icon-exchange_18:before {
+    content: '\ec15';
+
+}
+
+.icon-exclamation_mark:before {
+    content: '\ec16';
+
+}
+
+.icon-exclamation_mark_21:before {
+    content: '\ec17';
+
+}
+
+.icon-exit_house:before {
+    content: '\ec18';
+
+}
+
+.icon-export:before {
+    content: '\ec19';
+
+}
+
+.icon-extract:before {
+    content: '\ec1a';
+
+}
+
+.icon-fabric_building:before {
+    content: '\ec1b';
+
+}
+
+.icon-factory:before {
+    content: '\ec1c';
+
+}
+
+.icon-factory_pollute:before {
+    content: '\ec1d';
+
+}
+
+.icon-fair_i:before {
+    content: '\ec1e';
+
+}
+
+.icon-fair_ii:before {
+    content: '\ec1f';
+
+}
+
+.icon-farmhouse:before {
+    content: '\ec20';
+
+}
+
+.icon-fast_shipping:before {
+    content: '\ec21';
+
+}
+
+.icon-fast_speed:before {
+    content: '\ec22';
+
+}
+
+.icon-fastfood:before {
+    content: '\ec23';
+
+}
+
+.icon-female:before {
+    content: '\ec24';
+
+}
+
+.icon-fifty_coin:before {
+    content: '\ec25';
+
+}
+
+.icon-fifty_dollar:before {
+    content: '\ec26';
+
+}
+
+.icon-file:before {
+    content: '\ec27';
+
+}
+
+.icon-film_media:before {
+    content: '\ec28';
+
+}
+
+.icon-finalize_sale:before {
+    content: '\ec29';
+
+}
+
+.icon-finance:before {
+    content: '\ec2a';
+
+}
+
+.icon-finance_analytics:before {
+    content: '\ec2b';
+
+}
+
+.icon-finance_business:before {
+    content: '\ec2c';
+
+}
+
+.icon-finance_business_23:before {
+    content: '\ec2d';
+
+}
+
+.icon-finance_business_24:before {
+    content: '\ec2e';
+
+}
+
+.icon-finance_cash:before {
+    content: '\ec2f';
+
+}
+
+.icon-finances:before {
+    content: '\ec30';
+
+}
+
+.icon-financial_calcuation:before {
+    content: '\ec31';
+
+}
+
+.icon-financial_diagram:before {
+    content: '\ec32';
+
+}
+
+.icon-financial_presentation:before {
+    content: '\ec33';
+
+}
+
+.icon-financial_presentation_56:before {
+    content: '\ec34';
+
+}
+
+.icon-financial_presentation_57:before {
+    content: '\ec35';
+
+}
+
+.icon-financial_presentation_58:before {
+    content: '\ec36';
+
+}
+
+.icon-financial_report:before {
+    content: '\ec37';
+
+}
+
+.icon-find_bars:before {
+    content: '\ec38';
+
+}
+
+.icon-find_euro:before {
+    content: '\ec39';
+
+}
+
+.icon-find_house:before {
+    content: '\ec3a';
+
+}
+
+.icon-find_look:before {
+    content: '\ec3b';
+
+}
+
+.icon-find_look_29:before {
+    content: '\ec3c';
+
+}
+
+.icon-find_look_30:before {
+    content: '\ec3d';
+
+}
+
+.icon-find_search:before {
+    content: '\ec3e';
+
+}
+
+.icon-find_tor:before {
+    content: '\ec3f';
+
+}
+
+.icon-fire_house:before {
+    content: '\ec40';
+
+}
+
+.icon-fire_station:before {
+    content: '\ec41';
+
+}
+
+.icon-flip_coin:before {
+    content: '\ec42';
+
+}
+
+.icon-flip_coin_60:before {
+    content: '\ec43';
+
+}
+
+.icon-folder_archive:before {
+    content: '\ec44';
+
+}
+
+.icon-folder_document:before {
+    content: '\ec45';
+
+}
+
+.icon-forklift:before {
+    content: '\ec46';
+
+}
+
+.icon-form_application:before {
+    content: '\ec47';
+
+}
+
+.icon-form_task:before {
+    content: '\ec48';
+
+}
+
+.icon-fragile:before {
+    content: '\ec49';
+
+}
+
+.icon-fragile_goods:before {
+    content: '\ec4a';
+
+}
+
+.icon-frame_gallery:before {
+    content: '\ec4b';
+
+}
+
+.icon-free_delivery:before {
+    content: '\ec4c';
+
+}
+
+.icon-fuel_station:before {
+    content: '\ec4d';
+
+}
+
+.icon-full:before {
+    content: '\ec4e';
+
+}
+
+.icon-full_shopping:before {
+    content: '\ec4f';
+
+}
+
+.icon-full_wallet:before {
+    content: '\ec50';
+
+}
+
+.icon-funds:before {
+    content: '\ec51';
+
+}
+
+.icon-garage:before {
+    content: '\ec52';
+
+}
+
+.icon-gas_station:before {
+    content: '\ec53';
+
+}
+
+.icon-gavel:before {
+    content: '\ec54';
+
+}
+
+.icon-gear:before {
+    content: '\ec55';
+
+}
+
+.icon-gear_document:before {
+    content: '\ec56';
+
+}
+
+.icon-gear_hands:before {
+    content: '\ec57';
+
+}
+
+.icon-gear_options:before {
+    content: '\ec58';
+
+}
+
+.icon-gear_presentation:before {
+    content: '\ec59';
+
+}
+
+.icon-gear_setup:before {
+    content: '\ec5a';
+
+}
+
+.icon-gear_setup_31:before {
+    content: '\ec5b';
+
+}
+
+.icon-gear_setup_32:before {
+    content: '\ec5c';
+
+}
+
+.icon-gear_work:before {
+    content: '\ec5d';
+
+}
+
+.icon-geo_diagram:before {
+    content: '\ec5e';
+
+}
+
+.icon-geo_network:before {
+    content: '\ec5f';
+
+}
+
+.icon-geo_targeting:before {
+    content: '\ec60';
+
+}
+
+.icon-geo_trends:before {
+    content: '\ec61';
+
+}
+
+.icon-geotargeting_map:before {
+    content: '\ec62';
+
+}
+
+.icon-geotargeting_map_28:before {
+    content: '\ec63';
+
+}
+
+.icon-get_money:before {
+    content: '\ec64';
+
+}
+
+.icon-gift:before {
+    content: '\ec65';
+
+}
+
+.icon-gift_label:before {
+    content: '\ec66';
+
+}
+
+.icon-gift_present:before {
+    content: '\ec67';
+
+}
+
+.icon-gift_present_12:before {
+    content: '\ec68';
+
+}
+
+.icon-gift_present_13:before {
+    content: '\ec69';
+
+}
+
+.icon-gift_present_14:before {
+    content: '\ec6a';
+
+}
+
+.icon-globe:before {
+    content: '\ec6b';
+
+}
+
+.icon-globe_internet:before {
+    content: '\ec6c';
+
+}
+
+.icon-globe_money:before {
+    content: '\ec6d';
+
+}
+
+.icon-globe_navigation:before {
+    content: '\ec6e';
+
+}
+
+.icon-goal:before {
+    content: '\ec6f';
+
+}
+
+.icon-gold:before {
+    content: '\ec70';
+
+}
+
+.icon-gold_board:before {
+    content: '\ec71';
+
+}
+
+.icon-gold_ingots:before {
+    content: '\ec72';
+
+}
+
+.icon-gold_standar:before {
+    content: '\ec73';
+
+}
+
+.icon-gold_standard:before {
+    content: '\ec74';
+
+}
+
+.icon-goods:before {
+    content: '\ec75';
+
+}
+
+.icon-goods_box:before {
+    content: '\ec76';
+
+}
+
+.icon-google_search:before {
+    content: '\ec77';
+
+}
+
+.icon-government:before {
+    content: '\ec78';
+
+}
+
+.icon-graph:before {
+    content: '\ec79';
+
+}
+
+.icon-graph_67:before {
+    content: '\ec7a';
+
+}
+
+.icon-graph_68:before {
+    content: '\ec7b';
+
+}
+
+.icon-graph_69:before {
+    content: '\ec7c';
+
+}
+
+.icon-graph_chart:before {
+    content: '\ec7d';
+
+}
+
+.icon-graph_down:before {
+    content: '\ec7e';
+
+}
+
+.icon-graph_down_23:before {
+    content: '\ec7f';
+
+}
+
+.icon-graph_money:before {
+    content: '\ec80';
+
+}
+
+.icon-graph_presentation:before {
+    content: '\ec81';
+
+}
+
+.icon-graph_presentation_71:before {
+    content: '\ec82';
+
+}
+
+.icon-graph_presentation_72:before {
+    content: '\ec83';
+
+}
+
+.icon-graph_presentation_73:before {
+    content: '\ec84';
+
+}
+
+.icon-graph_presentation_74:before {
+    content: '\ec85';
+
+}
+
+.icon-graph_presentation_75:before {
+    content: '\ec86';
+
+}
+
+.icon-graph_presentation_76:before {
+    content: '\ec87';
+
+}
+
+.icon-graph_presentation_77:before {
+    content: '\ec88';
+
+}
+
+.icon-graph_up:before {
+    content: '\ec89';
+
+}
+
+.icon-graph_up_25:before {
+    content: '\ec8a';
+
+}
+
+.icon-grocery_store:before {
+    content: '\ec8b';
+
+}
+
+.icon-grocery_store_79:before {
+    content: '\ec8c';
+
+}
+
+.icon-group_leader:before {
+    content: '\ec8d';
+
+}
+
+.icon-growing_stats:before {
+    content: '\ec8e';
+
+}
+
+.icon-growth_investing:before {
+    content: '\ec8f';
+
+}
+
+.icon-hammer_lawyer:before {
+    content: '\ec90';
+
+}
+
+.icon-hand_bars:before {
+    content: '\ec91';
+
+}
+
+.icon-hand_check:before {
+    content: '\ec92';
+
+}
+
+.icon-hand_delivery:before {
+    content: '\ec93';
+
+}
+
+.icon-hand_dollar:before {
+    content: '\ec94';
+
+}
+
+.icon-hand_euro:before {
+    content: '\ec95';
+
+}
+
+.icon-hand_hands:before {
+    content: '\ec96';
+
+}
+
+.icon-hand_hands_34:before {
+    content: '\ec97';
+
+}
+
+.icon-hand_holding:before {
+    content: '\ec98';
+
+}
+
+.icon-hand_share:before {
+    content: '\ec99';
+
+}
+
+.icon-handle_care:before {
+    content: '\ec9a';
+
+}
+
+.icon-hands_arrows:before {
+    content: '\ec9b';
+
+}
+
+.icon-hands_banking:before {
+    content: '\ec9c';
+
+}
+
+.icon-hands_bars:before {
+    content: '\ec9d';
+
+}
+
+.icon-hands_hand:before {
+    content: '\ec9e';
+
+}
+
+.icon-hands_hand_36:before {
+    content: '\ec9f';
+
+}
+
+.icon-hands_hand_37:before {
+    content: '\eca0';
+
+}
+
+.icon-hands_hand_39:before {
+    content: '\eca1';
+
+}
+
+.icon-hands_hand_40:before {
+    content: '\eca2';
+
+}
+
+.icon-handshake:before {
+    content: '\eca3';
+
+}
+
+.icon-handshake_22:before {
+    content: '\eca4';
+
+}
+
+.icon-handshake_contract:before {
+    content: '\eca5';
+
+}
+
+.icon-help:before {
+    content: '\eca6';
+
+}
+
+.icon-hierarchy:before {
+    content: '\eca7';
+
+}
+
+.icon-home:before {
+    content: '\eca8';
+
+}
+
+.icon-home_house:before {
+    content: '\eca9';
+
+}
+
+.icon-home_house_10:before {
+    content: '\ecaa';
+
+}
+
+.icon-home_house_8:before {
+    content: '\ecab';
+
+}
+
+.icon-home_house_9:before {
+    content: '\ecac';
+
+}
+
+.icon-home_ii:before {
+    content: '\ecad';
+
+}
+
+.icon-home_loan:before {
+    content: '\ecae';
+
+}
+
+.icon-hospital:before {
+    content: '\ecaf';
+
+}
+
+.icon-hot_dog:before {
+    content: '\ecb0';
+
+}
+
+.icon-hotel:before {
+    content: '\ecb1';
+
+}
+
+.icon-house:before {
+    content: '\ecb2';
+
+}
+
+.icon-house_euro:before {
+    content: '\ecb3';
+
+}
+
+.icon-house_home:before {
+    content: '\ecb4';
+
+}
+
+.icon-house_online:before {
+    content: '\ecb5';
+
+}
+
+.icon-house_property:before {
+    content: '\ecb6';
+
+}
+
+.icon-house_property_12:before {
+    content: '\ecb7';
+
+}
+
+.icon-house_tor:before {
+    content: '\ecb8';
+
+}
+
+.icon-houses_three:before {
+    content: '\ecb9';
+
+}
+
+.icon-html_script:before {
+    content: '\ecba';
+
+}
+
+.icon-hut:before {
+    content: '\ecbb';
+
+}
+
+.icon-icecream:before {
+    content: '\ecbc';
+
+}
+
+.icon-icon:before {
+    content: '\ecbd';
+
+}
+
+.icon-id_card:before {
+    content: '\ecbe';
+
+}
+
+.icon-import:before {
+    content: '\ecbf';
+
+}
+
+.icon-important_bookmark:before {
+    content: '\ecc0';
+
+}
+
+.icon-inbox:before {
+    content: '\ecc1';
+
+}
+
+.icon-increase:before {
+    content: '\ecc2';
+
+}
+
+.icon-increase_growth:before {
+    content: '\ecc3';
+
+}
+
+.icon-indian_currency:before {
+    content: '\ecc4';
+
+}
+
+.icon-indian_rupee:before {
+    content: '\ecc5';
+
+}
+
+.icon-indian_rupee_29:before {
+    content: '\ecc6';
+
+}
+
+.icon-indian_rupee_30:before {
+    content: '\ecc7';
+
+}
+
+.icon-industrial_scale:before {
+    content: '\ecc8';
+
+}
+
+.icon-information:before {
+    content: '\ecc9';
+
+}
+
+.icon-innovation:before {
+    content: '\ecca';
+
+}
+
+.icon-innovative_business:before {
+    content: '\eccb';
+
+}
+
+.icon-inr:before {
+    content: '\eccc';
+
+}
+
+.icon-insert:before {
+    content: '\eccd';
+
+}
+
+.icon-insert_card:before {
+    content: '\ecce';
+
+}
+
+.icon-insert_coin:before {
+    content: '\eccf';
+
+}
+
+.icon-insurance:before {
+    content: '\ecd0';
+
+}
+
+.icon-insurance_indian:before {
+    content: '\ecd1';
+
+}
+
+.icon-interest_rate:before {
+    content: '\ecd2';
+
+}
+
+.icon-invest:before {
+    content: '\ecd3';
+
+}
+
+.icon-investment_budget:before {
+    content: '\ecd4';
+
+}
+
+.icon-investment_money:before {
+    content: '\ecd5';
+
+}
+
+.icon-investor:before {
+    content: '\ecd6';
+
+}
+
+.icon-invoice_bill:before {
+    content: '\ecd7';
+
+}
+
+.icon-items:before {
+    content: '\ecd8';
+
+}
+
+.icon-judge_hammer:before {
+    content: '\ecd9';
+
+}
+
+.icon-judge_mallet:before {
+    content: '\ecda';
+
+}
+
+.icon-jump:before {
+    content: '\ecdb';
+
+}
+
+.icon-justice:before {
+    content: '\ecdc';
+
+}
+
+.icon-justice_85:before {
+    content: '\ecdd';
+
+}
+
+.icon-justice_balance:before {
+    content: '\ecde';
+
+}
+
+.icon-k:before {
+    content: '\ecdf';
+
+}
+
+.icon-keep_dry:before {
+    content: '\ece0';
+
+}
+
+.icon-key:before {
+    content: '\ece1';
+
+}
+
+.icon-key_to:before {
+    content: '\ece2';
+
+}
+
+.icon-key_to_27:before {
+    content: '\ece3';
+
+}
+
+.icon-kosz:before {
+    content: '\ece4';
+
+}
+
+.icon-landing:before {
+    content: '\ece5';
+
+}
+
+.icon-laptop_euro:before {
+    content: '\ece6';
+
+}
+
+.icon-large_building:before {
+    content: '\ece7';
+
+}
+
+.icon-large_building_20:before {
+    content: '\ece8';
+
+}
+
+.icon-large_factory:before {
+    content: '\ece9';
+
+}
+
+.icon-large_garage:before {
+    content: '\ecea';
+
+}
+
+.icon-large_tower:before {
+    content: '\eceb';
+
+}
+
+.icon-law_building:before {
+    content: '\ecec';
+
+}
+
+.icon-law_scales:before {
+    content: '\eced';
+
+}
+
+.icon-letter_envelope:before {
+    content: '\ecee';
+
+}
+
+.icon-library:before {
+    content: '\ecef';
+
+}
+
+.icon-light_bulb:before {
+    content: '\ecf0';
+
+}
+
+.icon-light_bulb_42:before {
+    content: '\ecf1';
+
+}
+
+.icon-lightbulb_idea:before {
+    content: '\ecf2';
+
+}
+
+.icon-lighthouse:before {
+    content: '\ecf3';
+
+}
+
+.icon-line_chart:before {
+    content: '\ecf4';
+
+}
+
+.icon-link_select:before {
+    content: '\ecf5';
+
+}
+
+.icon-list:before {
+    content: '\ecf6';
+
+}
+
+.icon-list_board:before {
+    content: '\ecf7';
+
+}
+
+.icon-list_favorites:before {
+    content: '\ecf8';
+
+}
+
+.icon-litecoin:before {
+    content: '\ecf9';
+
+}
+
+.icon-load_a:before {
+    content: '\ecfa';
+
+}
+
+.icon-loan:before {
+    content: '\ecfb';
+
+}
+
+.icon-loan_money:before {
+    content: '\ecfc';
+
+}
+
+.icon-local_banks:before {
+    content: '\ecfd';
+
+}
+
+.icon-locations:before {
+    content: '\ecfe';
+
+}
+
+.icon-lock:before {
+    content: '\ecff';
+
+}
+
+.icon-lock_funds:before {
+    content: '\ed00';
+
+}
+
+.icon-lock_user:before {
+    content: '\ed01';
+
+}
+
+.icon-locker:before {
+    content: '\ed02';
+
+}
+
+.icon-login_form:before {
+    content: '\ed03';
+
+}
+
+.icon-login_lock:before {
+    content: '\ed04';
+
+}
+
+.icon-logistic:before {
+    content: '\ed05';
+
+}
+
+.icon-look_search:before {
+    content: '\ed06';
+
+}
+
+.icon-loud_speaker:before {
+    content: '\ed07';
+
+}
+
+.icon-love:before {
+    content: '\ed08';
+
+}
+
+.icon-luggage:before {
+    content: '\ed09';
+
+}
+
+.icon-luggage_truck:before {
+    content: '\ed0a';
+
+}
+
+.icon-luxury:before {
+    content: '\ed0b';
+
+}
+
+.icon-magnifier_dollar:before {
+    content: '\ed0c';
+
+}
+
+.icon-magnifying_income:before {
+    content: '\ed0d';
+
+}
+
+.icon-magnifying_keywood:before {
+    content: '\ed0e';
+
+}
+
+.icon-magnifying_local:before {
+    content: '\ed0f';
+
+}
+
+.icon-magnifying_tips:before {
+    content: '\ed10';
+
+}
+
+.icon-mail:before {
+    content: '\ed11';
+
+}
+
+.icon-mail_inbox:before {
+    content: '\ed12';
+
+}
+
+.icon-mail_scale:before {
+    content: '\ed13';
+
+}
+
+.icon-mailbox:before {
+    content: '\ed14';
+
+}
+
+.icon-maintenance_services:before {
+    content: '\ed15';
+
+}
+
+.icon-male:before {
+    content: '\ed16';
+
+}
+
+.icon-management:before {
+    content: '\ed17';
+
+}
+
+.icon-management_30:before {
+    content: '\ed18';
+
+}
+
+.icon-map:before {
+    content: '\ed19';
+
+}
+
+.icon-map_pin:before {
+    content: '\ed1a';
+
+}
+
+.icon-marker:before {
+    content: '\ed1b';
+
+}
+
+.icon-market_research:before {
+    content: '\ed1c';
+
+}
+
+.icon-market_research_37:before {
+    content: '\ed1d';
+
+}
+
+.icon-medical_store:before {
+    content: '\ed1e';
+
+}
+
+.icon-microphone:before {
+    content: '\ed1f';
+
+}
+
+.icon-mill:before {
+    content: '\ed20';
+
+}
+
+.icon-minus:before {
+    content: '\ed21';
+
+}
+
+.icon-minus_outline:before {
+    content: '\ed22';
+
+}
+
+.icon-mobile:before {
+    content: '\ed23';
+
+}
+
+.icon-mobile_banking:before {
+    content: '\ed24';
+
+}
+
+.icon-mobile_banking_23:before {
+    content: '\ed25';
+
+}
+
+.icon-mobile_banking_56:before {
+    content: '\ed26';
+
+}
+
+.icon-mobile_cell:before {
+    content: '\ed27';
+
+}
+
+.icon-mobile_marketing:before {
+    content: '\ed28';
+
+}
+
+.icon-mobile_online:before {
+    content: '\ed29';
+
+}
+
+.icon-mockup_wireframe:before {
+    content: '\ed2a';
+
+}
+
+.icon-modify_document:before {
+    content: '\ed2b';
+
+}
+
+.icon-money:before {
+    content: '\ed2c';
+
+}
+
+.icon-money_arrow:before {
+    content: '\ed2d';
+
+}
+
+.icon-money_bag:before {
+    content: '\ed2e';
+
+}
+
+.icon-money_bag_24:before {
+    content: '\ed2f';
+
+}
+
+.icon-money_bag_25:before {
+    content: '\ed30';
+
+}
+
+.icon-money_bag_48:before {
+    content: '\ed31';
+
+}
+
+.icon-money_bank:before {
+    content: '\ed32';
+
+}
+
+.icon-money_business copy:before {
+    content: '\ed33';
+
+}
+
+.icon-money_business:before {
+    content: '\ed34';
+
+}
+
+.icon-money_cash:before {
+    content: '\ed35';
+
+}
+
+.icon-money_clip:before {
+    content: '\ed36';
+
+}
+
+.icon-money_credit:before {
+    content: '\ed37';
+
+}
+
+.icon-money_currency:before {
+    content: '\ed38';
+
+}
+
+.icon-money_exchange:before {
+    content: '\ed39';
+
+}
+
+.icon-money_finance:before {
+    content: '\ed3a';
+
+}
+
+.icon-money_fist:before {
+    content: '\ed3b';
+
+}
+
+.icon-money_idea:before {
+    content: '\ed3c';
+
+}
+
+.icon-money_management:before {
+    content: '\ed3d';
+
+}
+
+.icon-money_optimization:before {
+    content: '\ed3e';
+
+}
+
+.icon-money_power:before {
+    content: '\ed3f';
+
+}
+
+.icon-money_question:before {
+    content: '\ed40';
+
+}
+
+.icon-money_safe:before {
+    content: '\ed41';
+
+}
+
+.icon-money_safe_90:before {
+    content: '\ed42';
+
+}
+
+.icon-money_savings:before {
+    content: '\ed43';
+
+}
+
+.icon-money_search:before {
+    content: '\ed44';
+
+}
+
+.icon-money_stack:before {
+    content: '\ed45';
+
+}
+
+.icon-money_stack_92:before {
+    content: '\ed46';
+
+}
+
+.icon-money_suitcase:before {
+    content: '\ed47';
+
+}
+
+.icon-money_up:before {
+    content: '\ed48';
+
+}
+
+.icon-money_wallet:before {
+    content: '\ed49';
+
+}
+
+.icon-monitor_arrow:before {
+    content: '\ed4a';
+
+}
+
+.icon-monkey:before {
+    content: '\ed4b';
+
+}
+
+.icon-mosque:before {
+    content: '\ed4c';
+
+}
+
+.icon-mother_child:before {
+    content: '\ed4d';
+
+}
+
+.icon-mount_of:before {
+    content: '\ed4e';
+
+}
+
+.icon-move_down:before {
+    content: '\ed4f';
+
+}
+
+.icon-move_up:before {
+    content: '\ed50';
+
+}
+
+.icon-museum:before {
+    content: '\ed51';
+
+}
+
+.icon-music:before {
+    content: '\ed52';
+
+}
+
+.icon-music_27:before {
+    content: '\ed53';
+
+}
+
+.icon-mutual_fund:before {
+    content: '\ed54';
+
+}
+
+.icon-name_tag:before {
+    content: '\ed55';
+
+}
+
+.icon-nest_egg:before {
+    content: '\ed56';
+
+}
+
+.icon-new:before {
+    content: '\ed57';
+
+}
+
+.icon-new_price:before {
+    content: '\ed58';
+
+}
+
+.icon-new_tag:before {
+    content: '\ed59';
+
+}
+
+.icon-news_newspaper:before {
+    content: '\ed5a';
+
+}
+
+.icon-next_go:before {
+    content: '\ed5b';
+
+}
+
+.icon-no_dog:before {
+    content: '\ed5c';
+
+}
+
+.icon-no_drink:before {
+    content: '\ed5d';
+
+}
+
+.icon-no_entry:before {
+    content: '\ed5e';
+
+}
+
+.icon-no_icecream:before {
+    content: '\ed5f';
+
+}
+
+.icon-no_photo:before {
+    content: '\ed60';
+
+}
+
+.icon-no_smoking:before {
+    content: '\ed61';
+
+}
+
+.icon-non_cash:before {
+    content: '\ed62';
+
+}
+
+.icon-note_book:before {
+    content: '\ed63';
+
+}
+
+.icon-note_book_51:before {
+    content: '\ed64';
+
+}
+
+.icon-note_table:before {
+    content: '\ed65';
+
+}
+
+.icon-number_one:before {
+    content: '\ed66';
+
+}
+
+.icon-number_ten:before {
+    content: '\ed67';
+
+}
+
+.icon-offersboard:before {
+    content: '\ed68';
+
+}
+
+.icon-office_building:before {
+    content: '\ed69';
+
+}
+
+.icon-offices:before {
+    content: '\ed6a';
+
+}
+
+.icon-oil_barrel:before {
+    content: '\ed6b';
+
+}
+
+.icon-oil_tank:before {
+    content: '\ed6c';
+
+}
+
+.icon-one_hundre:before {
+    content: '\ed6d';
+
+}
+
+.icon-one_hundred:before {
+    content: '\ed6e';
+
+}
+
+.icon-one_percent:before {
+    content: '\ed6f';
+
+}
+
+.icon-online_marketing:before {
+    content: '\ed70';
+
+}
+
+.icon-open:before {
+    content: '\ed71';
+
+}
+
+.icon-open_close:before {
+    content: '\ed72';
+
+}
+
+.icon-open_crate:before {
+    content: '\ed73';
+
+}
+
+.icon-open_downwards:before {
+    content: '\ed74';
+
+}
+
+.icon-open_sign:before {
+    content: '\ed75';
+
+}
+
+.icon-open_upwards:before {
+    content: '\ed76';
+
+}
+
+.icon-opened_contents:before {
+    content: '\ed77';
+
+}
+
+.icon-opera_house:before {
+    content: '\ed78';
+
+}
+
+.icon-options_setup:before {
+    content: '\ed79';
+
+}
+
+.icon-orientation_diagram:before {
+    content: '\ed7a';
+
+}
+
+.icon-orientation_diagram_96:before {
+    content: '\ed7b';
+
+}
+
+.icon-orientation_diagram_97:before {
+    content: '\ed7c';
+
+}
+
+.icon-orientation_diagram_98:before {
+    content: '\ed7d';
+
+}
+
+.icon-outline:before {
+    content: '\ed7e';
+
+}
+
+.icon-pack:before {
+    content: '\ed7f';
+
+}
+
+.icon-package:before {
+    content: '\ed80';
+
+}
+
+.icon-package_delivery:before {
+    content: '\ed81';
+
+}
+
+.icon-packet:before {
+    content: '\ed82';
+
+}
+
+.icon-packing_tape:before {
+    content: '\ed83';
+
+}
+
+.icon-page_layout:before {
+    content: '\ed84';
+
+}
+
+.icon-paid:before {
+    content: '\ed85';
+
+}
+
+.icon-paper_document:before {
+    content: '\ed86';
+
+}
+
+.icon-parcel_package:before {
+    content: '\ed87';
+
+}
+
+.icon-parking:before {
+    content: '\ed88';
+
+}
+
+.icon-parking_meter:before {
+    content: '\ed89';
+
+}
+
+.icon-partnership:before {
+    content: '\ed8a';
+
+}
+
+.icon-party_ribbon:before {
+    content: '\ed8b';
+
+}
+
+.icon-pass:before {
+    content: '\ed8c';
+
+}
+
+.icon-password:before {
+    content: '\ed8d';
+
+}
+
+.icon-pause:before {
+    content: '\ed8e';
+
+}
+
+.icon-pay_dollar:before {
+    content: '\ed8f';
+
+}
+
+.icon-pay_per:before {
+    content: '\ed90';
+
+}
+
+.icon-payment_method:before {
+    content: '\ed91';
+
+}
+
+.icon-payment_methods:before {
+    content: '\ed92';
+
+}
+
+.icon-payment_pay:before {
+    content: '\ed93';
+
+}
+
+.icon-payment_service:before {
+    content: '\ed94';
+
+}
+
+.icon-payment_shop:before {
+    content: '\ed95';
+
+}
+
+.icon-pecentage_rate:before {
+    content: '\ed96';
+
+}
+
+.icon-pentagon:before {
+    content: '\ed97';
+
+}
+
+.icon-people_building:before {
+    content: '\ed98';
+
+}
+
+.icon-people_contact:before {
+    content: '\ed99';
+
+}
+
+.icon-percent:before {
+    content: '\ed9a';
+
+}
+
+.icon-percent_increase:before {
+    content: '\ed9b';
+
+}
+
+.icon-percent_savings:before {
+    content: '\ed9c';
+
+}
+
+.icon-percent_savings_29:before {
+    content: '\ed9d';
+
+}
+
+.icon-percentage:before {
+    content: '\ed9e';
+
+}
+
+.icon-percentage_57:before {
+    content: '\ed9f';
+
+}
+
+.icon-percentage_58:before {
+    content: '\eda0';
+
+}
+
+.icon-percentage_59:before {
+    content: '\eda1';
+
+}
+
+.icon-percentage_arrow:before {
+    content: '\eda2';
+
+}
+
+.icon-percentage_rate:before {
+    content: '\eda3';
+
+}
+
+.icon-percentage_rate_47:before {
+    content: '\eda4';
+
+}
+
+.icon-percentage_round:before {
+    content: '\eda5';
+
+}
+
+.icon-perfume_bottle:before {
+    content: '\eda6';
+
+}
+
+.icon-periodic_growth:before {
+    content: '\eda7';
+
+}
+
+.icon-personal_data:before {
+    content: '\eda8';
+
+}
+
+.icon-personal_wallet:before {
+    content: '\eda9';
+
+}
+
+.icon-phone:before {
+    content: '\edaa';
+
+}
+
+.icon-phone_in:before {
+    content: '\edab';
+
+}
+
+.icon-photo_album:before {
+    content: '\edac';
+
+}
+
+.icon-picture_folder:before {
+    content: '\edad';
+
+}
+
+.icon-pie_chart:before {
+    content: '\edae';
+
+}
+
+.icon-pie_chart_101:before {
+    content: '\edaf';
+
+}
+
+.icon-pie_chart_102:before {
+    content: '\edb0';
+
+}
+
+.icon-pie_chart_103:before {
+    content: '\edb1';
+
+}
+
+.icon-pie_chart_104:before {
+    content: '\edb2';
+
+}
+
+.icon-pie_chart_105:before {
+    content: '\edb3';
+
+}
+
+.icon-pie_chart_106:before {
+    content: '\edb4';
+
+}
+
+.icon-pie_chart_63:before {
+    content: '\edb5';
+
+}
+
+.icon-pie_graph:before {
+    content: '\edb6';
+
+}
+
+.icon-piggy:before {
+    content: '\edb7';
+
+}
+
+.icon-piggy_bank:before {
+    content: '\edb8';
+
+}
+
+.icon-piggy_bank_108:before {
+    content: '\edb9';
+
+}
+
+.icon-piggy_bank_35:before {
+    content: '\edba';
+
+}
+
+.icon-piggybank_analytic:before {
+    content: '\edbb';
+
+}
+
+.icon-piggybank_savings:before {
+    content: '\edbc';
+
+}
+
+.icon-piggybank_savings_16:before {
+    content: '\edbd';
+
+}
+
+.icon-piggybank_savings_17:before {
+    content: '\edbe';
+
+}
+
+.icon-pinmachine:before {
+    content: '\edbf';
+
+}
+
+.icon-plastic_protection:before {
+    content: '\edc0';
+
+}
+
+.icon-play:before {
+    content: '\edc1';
+
+}
+
+.icon-play_video:before {
+    content: '\edc2';
+
+}
+
+.icon-play_youtube:before {
+    content: '\edc3';
+
+}
+
+.icon-plus:before {
+    content: '\edc4';
+
+}
+
+.icon-plus_outline:before {
+    content: '\edc5';
+
+}
+
+.icon-podium_presentation:before {
+    content: '\edc6';
+
+}
+
+.icon-point_chart:before {
+    content: '\edc7';
+
+}
+
+.icon-police_station:before {
+    content: '\edc8';
+
+}
+
+.icon-poor:before {
+    content: '\edc9';
+
+}
+
+.icon-pos:before {
+    content: '\edca';
+
+}
+
+.icon-post_it:before {
+    content: '\edcb';
+
+}
+
+.icon-postit:before {
+    content: '\edcc';
+
+}
+
+.icon-pound:before {
+    content: '\edcd';
+
+}
+
+.icon-pound_coin:before {
+    content: '\edce';
+
+}
+
+.icon-precentage_circle:before {
+    content: '\edcf';
+
+}
+
+.icon-precision_seledt:before {
+    content: '\edd0';
+
+}
+
+.icon-premium_service:before {
+    content: '\edd1';
+
+}
+
+.icon-presentation:before {
+    content: '\edd2';
+
+}
+
+.icon-presentation_chart:before {
+    content: '\edd3';
+
+}
+
+.icon-price_tag:before {
+    content: '\edd4';
+
+}
+
+.icon-price_tag_113:before {
+    content: '\edd5';
+
+}
+
+.icon-price_tag_114:before {
+    content: '\edd6';
+
+}
+
+.icon-price_tag_115:before {
+    content: '\edd7';
+
+}
+
+.icon-price_tag_116:before {
+    content: '\edd8';
+
+}
+
+.icon-price_tag_117:before {
+    content: '\edd9';
+
+}
+
+.icon-price_tag_118:before {
+    content: '\edda';
+
+}
+
+.icon-price_tag_119:before {
+    content: '\eddb';
+
+}
+
+.icon-price_tag_14:before {
+    content: '\eddc';
+
+}
+
+.icon-price_tag_32:before {
+    content: '\eddd';
+
+}
+
+.icon-price_tag_33:before {
+    content: '\edde';
+
+}
+
+.icon-price_tag_34:before {
+    content: '\eddf';
+
+}
+
+.icon-price_tag_35:before {
+    content: '\ede0';
+
+}
+
+.icon-pricing:before {
+    content: '\ede1';
+
+}
+
+.icon-prison:before {
+    content: '\ede2';
+
+}
+
+.icon-product:before {
+    content: '\ede3';
+
+}
+
+.icon-professional_briefcase:before {
+    content: '\ede4';
+
+}
+
+.icon-profit_down:before {
+    content: '\ede5';
+
+}
+
+.icon-profit_loss:before {
+    content: '\ede6';
+
+}
+
+.icon-profit_up:before {
+    content: '\ede7';
+
+}
+
+.icon-profits:before {
+    content: '\ede8';
+
+}
+
+.icon-projector_screen:before {
+    content: '\ede9';
+
+}
+
+.icon-promotion:before {
+    content: '\edea';
+
+}
+
+.icon-promotion_announcement:before {
+    content: '\edeb';
+
+}
+
+.icon-promotions:before {
+    content: '\edec';
+
+}
+
+.icon-pyramids:before {
+    content: '\eded';
+
+}
+
+.icon-qr_code:before {
+    content: '\edee';
+
+}
+
+.icon-quick_ship:before {
+    content: '\edef';
+
+}
+
+.icon-quick_ship_26:before {
+    content: '\edf0';
+
+}
+
+.icon-radio_transmitter:before {
+    content: '\edf1';
+
+}
+
+.icon-receipt:before {
+    content: '\edf2';
+
+}
+
+.icon-reciept:before {
+    content: '\edf3';
+
+}
+
+.icon-reciept_32:before {
+    content: '\edf4';
+
+}
+
+.icon-reciept_70:before {
+    content: '\edf5';
+
+}
+
+.icon-reciept_71:before {
+    content: '\edf6';
+
+}
+
+.icon-reconciled:before {
+    content: '\edf7';
+
+}
+
+.icon-record_clearance:before {
+    content: '\edf8';
+
+}
+
+.icon-records:before {
+    content: '\edf9';
+
+}
+
+.icon-recycle:before {
+    content: '\edfa';
+
+}
+
+.icon-referral:before {
+    content: '\edfb';
+
+}
+
+.icon-refund:before {
+    content: '\edfc';
+
+}
+
+.icon-register_shop:before {
+    content: '\edfd';
+
+}
+
+.icon-reject:before {
+    content: '\edfe';
+
+}
+
+.icon-remove_from:before {
+    content: '\edff';
+
+}
+
+.icon-repair_service:before {
+    content: '\ee00';
+
+}
+
+.icon-report:before {
+    content: '\ee01';
+
+}
+
+.icon-report_monitor:before {
+    content: '\ee02';
+
+}
+
+.icon-restore_refund:before {
+    content: '\ee03';
+
+}
+
+.icon-resume:before {
+    content: '\ee04';
+
+}
+
+.icon-retail:before {
+    content: '\ee05';
+
+}
+
+.icon-retrieve_card:before {
+    content: '\ee06';
+
+}
+
+.icon-retrieve_cart:before {
+    content: '\ee07';
+
+}
+
+.icon-retrieve_from:before {
+    content: '\ee08';
+
+}
+
+.icon-return_of:before {
+    content: '\ee09';
+
+}
+
+.icon-rewind_time:before {
+    content: '\ee0a';
+
+}
+
+.icon-rich:before {
+    content: '\ee0b';
+
+}
+
+.icon-right:before {
+    content: '\ee0c';
+
+}
+
+.icon-right_arrow:before {
+    content: '\ee0d';
+
+}
+
+.icon-right_way:before {
+    content: '\ee0e';
+
+}
+
+.icon-rising_chart:before {
+    content: '\ee0f';
+
+}
+
+.icon-road:before {
+    content: '\ee10';
+
+}
+
+.icon-road_sign:before {
+    content: '\ee11';
+
+}
+
+.icon-route:before {
+    content: '\ee12';
+
+}
+
+.icon-ruler:before {
+    content: '\ee13';
+
+}
+
+.icon-safe:before {
+    content: '\ee14';
+
+}
+
+.icon-safe_74:before {
+    content: '\ee15';
+
+}
+
+.icon-safe_box:before {
+    content: '\ee16';
+
+}
+
+.icon-safe_money:before {
+    content: '\ee17';
+
+}
+
+.icon-safebox:before {
+    content: '\ee18';
+
+}
+
+.icon-safebox_128:before {
+    content: '\ee19';
+
+}
+
+.icon-sale_sign:before {
+    content: '\ee1a';
+
+}
+
+.icon-sales_hit:before {
+    content: '\ee1b';
+
+}
+
+.icon-save_money:before {
+    content: '\ee1c';
+
+}
+
+.icon-savings_account:before {
+    content: '\ee1d';
+
+}
+
+.icon-savings_check:before {
+    content: '\ee1e';
+
+}
+
+.icon-savings_dollars:before {
+    content: '\ee1f';
+
+}
+
+.icon-scale:before {
+    content: '\ee20';
+
+}
+
+.icon-scale_36:before {
+    content: '\ee21';
+
+}
+
+.icon-scales:before {
+    content: '\ee22';
+
+}
+
+.icon-scan_barcode:before {
+    content: '\ee23';
+
+}
+
+.icon-schedule_task:before {
+    content: '\ee24';
+
+}
+
+.icon-school:before {
+    content: '\ee25';
+
+}
+
+.icon-school_tower:before {
+    content: '\ee26';
+
+}
+
+.icon-scissor:before {
+    content: '\ee27';
+
+}
+
+.icon-scissors_dotted:before {
+    content: '\ee28';
+
+}
+
+.icon-screen_chart:before {
+    content: '\ee29';
+
+}
+
+.icon-screen_report:before {
+    content: '\ee2a';
+
+}
+
+.icon-screen_rotation:before {
+    content: '\ee2b';
+
+}
+
+.icon-sea_tower:before {
+    content: '\ee2c';
+
+}
+
+.icon-sea_tower_52:before {
+    content: '\ee2d';
+
+}
+
+.icon-seach_money:before {
+    content: '\ee2e';
+
+}
+
+.icon-sealed_box:before {
+    content: '\ee2f';
+
+}
+
+.icon-sealed_box_16:before {
+    content: '\ee30';
+
+}
+
+.icon-sealed_contract:before {
+    content: '\ee31';
+
+}
+
+.icon-search:before {
+    content: '\ee32';
+
+}
+
+.icon-search_board:before {
+    content: '\ee33';
+
+}
+
+.icon-search_find:before {
+    content: '\ee34';
+
+}
+
+.icon-search_find_67:before {
+    content: '\ee35';
+
+}
+
+.icon-search_look:before {
+    content: '\ee36';
+
+}
+
+.icon-secure_electronic:before {
+    content: '\ee37';
+
+}
+
+.icon-secure_mobile:before {
+    content: '\ee38';
+
+}
+
+.icon-secure_payment:before {
+    content: '\ee39';
+
+}
+
+.icon-security:before {
+    content: '\ee3a';
+
+}
+
+.icon-security_camera:before {
+    content: '\ee3b';
+
+}
+
+.icon-sell:before {
+    content: '\ee3c';
+
+}
+
+.icon-send_letter:before {
+    content: '\ee3d';
+
+}
+
+.icon-seo_training:before {
+    content: '\ee3e';
+
+}
+
+.icon-service_hours:before {
+    content: '\ee3f';
+
+}
+
+.icon-settings_options:before {
+    content: '\ee40';
+
+}
+
+.icon-settings_setting:before {
+    content: '\ee41';
+
+}
+
+.icon-setup_options:before {
+    content: '\ee42';
+
+}
+
+.icon-share:before {
+    content: '\ee43';
+
+}
+
+.icon-shares_down:before {
+    content: '\ee44';
+
+}
+
+.icon-shares_up:before {
+    content: '\ee45';
+
+}
+
+.icon-shent:before {
+    content: '\ee46';
+
+}
+
+.icon-shield:before {
+    content: '\ee47';
+
+}
+
+.icon-shield_check:before {
+    content: '\ee48';
+
+}
+
+.icon-ship_truck:before {
+    content: '\ee49';
+
+}
+
+.icon-ship_truck_39:before {
+    content: '\ee4a';
+
+}
+
+.icon-ship_truck_40:before {
+    content: '\ee4b';
+
+}
+
+.icon-shipped_go:before {
+    content: '\ee4c';
+
+}
+
+.icon-shipping:before {
+    content: '\ee4d';
+
+}
+
+.icon-shipping_box:before {
+    content: '\ee4e';
+
+}
+
+.icon-shipping_car:before {
+    content: '\ee4f';
+
+}
+
+.icon-shipping_fast:before {
+    content: '\ee50';
+
+}
+
+.icon-shipping_free:before {
+    content: '\ee51';
+
+}
+
+.icon-shipping_packages:before {
+    content: '\ee52';
+
+}
+
+.icon-shipping_ship:before {
+    content: '\ee53';
+
+}
+
+.icon-shipping_time:before {
+    content: '\ee54';
+
+}
+
+.icon-shoe_fast:before {
+    content: '\ee55';
+
+}
+
+.icon-shoes:before {
+    content: '\ee56';
+
+}
+
+.icon-shop:before {
+    content: '\ee57';
+
+}
+
+.icon-shop_house:before {
+    content: '\ee58';
+
+}
+
+.icon-shop_house_15:before {
+    content: '\ee59';
+
+}
+
+.icon-shop_house_16:before {
+    content: '\ee5a';
+
+}
+
+.icon-shopping_bag:before {
+    content: '\ee5b';
+
+}
+
+.icon-shopping_bag_131:before {
+    content: '\ee5c';
+
+}
+
+.icon-shopping_bag_132:before {
+    content: '\ee5d';
+
+}
+
+.icon-shopping_bag_133:before {
+    content: '\ee5e';
+
+}
+
+.icon-shopping_bag_39:before {
+    content: '\ee5f';
+
+}
+
+.icon-shopping_bag_40:before {
+    content: '\ee60';
+
+}
+
+.icon-shopping_bag_41:before {
+    content: '\ee61';
+
+}
+
+.icon-shopping_bag_42:before {
+    content: '\ee62';
+
+}
+
+.icon-shopping_bag_43:before {
+    content: '\ee63';
+
+}
+
+.icon-shopping_basket copy:before {
+    content: '\ee64';
+
+}
+
+.icon-shopping_basket:before {
+    content: '\ee65';
+
+}
+
+.icon-shopping_basket_135:before {
+    content: '\ee66';
+
+}
+
+.icon-shopping_basket_136:before {
+    content: '\ee67';
+
+}
+
+.icon-shopping_basket_26:before {
+    content: '\ee68';
+
+}
+
+.icon-shopping_basket_27:before {
+    content: '\ee69';
+
+}
+
+.icon-shopping_card:before {
+    content: '\ee6a';
+
+}
+
+.icon-shopping_cart:before {
+    content: '\ee6b';
+
+}
+
+.icon-shopping_cart_138:before {
+    content: '\ee6c';
+
+}
+
+.icon-shopping_cart_139:before {
+    content: '\ee6d';
+
+}
+
+.icon-shopping_cart_140:before {
+    content: '\ee6e';
+
+}
+
+.icon-shopping_cart_141:before {
+    content: '\ee6f';
+
+}
+
+.icon-shopping_cart_142:before {
+    content: '\ee70';
+
+}
+
+.icon-shopping_cart_143:before {
+    content: '\ee71';
+
+}
+
+.icon-shopping_cart_144:before {
+    content: '\ee72';
+
+}
+
+.icon-shopping_cart_145:before {
+    content: '\ee73';
+
+}
+
+.icon-shopping_cart_146:before {
+    content: '\ee74';
+
+}
+
+.icon-shopping_cart_147:before {
+    content: '\ee75';
+
+}
+
+.icon-shopping_cart_148:before {
+    content: '\ee76';
+
+}
+
+.icon-shopping_cart_45:before {
+    content: '\ee77';
+
+}
+
+.icon-shopping_purse:before {
+    content: '\ee78';
+
+}
+
+.icon-shopping_purse_29:before {
+    content: '\ee79';
+
+}
+
+.icon-shopping_purse_30:before {
+    content: '\ee7a';
+
+}
+
+.icon-sign_bitcoin:before {
+    content: '\ee7b';
+
+}
+
+.icon-sign_euro:before {
+    content: '\ee7c';
+
+}
+
+.icon-sign_pound:before {
+    content: '\ee7d';
+
+}
+
+.icon-sign_yen:before {
+    content: '\ee7e';
+
+}
+
+.icon-signature:before {
+    content: '\ee7f';
+
+}
+
+.icon-signature_contract:before {
+    content: '\ee80';
+
+}
+
+.icon-signature_pen:before {
+    content: '\ee81';
+
+}
+
+.icon-skycrapers:before {
+    content: '\ee82';
+
+}
+
+.icon-skyscrapers:before {
+    content: '\ee83';
+
+}
+
+.icon-small_home:before {
+    content: '\ee84';
+
+}
+
+.icon-small_house:before {
+    content: '\ee85';
+
+}
+
+.icon-small_roof:before {
+    content: '\ee86';
+
+}
+
+.icon-smartphone:before {
+    content: '\ee87';
+
+}
+
+.icon-smartphone_mobile:before {
+    content: '\ee88';
+
+}
+
+.icon-smile:before {
+    content: '\ee89';
+
+}
+
+.icon-sofa:before {
+    content: '\ee8a';
+
+}
+
+.icon-software:before {
+    content: '\ee8b';
+
+}
+
+.icon-sonny_see:before {
+    content: '\ee8c';
+
+}
+
+.icon-sound_wave:before {
+    content: '\ee8d';
+
+}
+
+.icon-specification:before {
+    content: '\ee8e';
+
+}
+
+.icon-speech_bubble:before {
+    content: '\ee8f';
+
+}
+
+.icon-sport_shoe:before {
+    content: '\ee90';
+
+}
+
+.icon-st._pauls:before {
+    content: '\ee91';
+
+}
+
+.icon-stack_bills:before {
+    content: '\ee92';
+
+}
+
+.icon-stacked_coins:before {
+    content: '\ee93';
+
+}
+
+.icon-stacked_coins_79:before {
+    content: '\ee94';
+
+}
+
+.icon-stacked_money:before {
+    content: '\ee95';
+
+}
+
+.icon-stairs:before {
+    content: '\ee96';
+
+}
+
+.icon-stamp:before {
+    content: '\ee97';
+
+}
+
+.icon-stamp_150:before {
+    content: '\ee98';
+
+}
+
+.icon-star:before {
+    content: '\ee99';
+
+}
+
+.icon-starburst:before {
+    content: '\ee9a';
+
+}
+
+.icon-starburst_check:before {
+    content: '\ee9b';
+
+}
+
+.icon-starburst_euro:before {
+    content: '\ee9c';
+
+}
+
+.icon-statics_business:before {
+    content: '\ee9d';
+
+}
+
+.icon-statics_business_57:before {
+    content: '\ee9e';
+
+}
+
+.icon-statistics:before {
+    content: '\ee9f';
+
+}
+
+.icon-status:before {
+    content: '\eea0';
+
+}
+
+.icon-stickers:before {
+    content: '\eea1';
+
+}
+
+.icon-stock_of:before {
+    content: '\eea2';
+
+}
+
+.icon-stocks_down:before {
+    content: '\eea3';
+
+}
+
+.icon-stocks_up:before {
+    content: '\eea4';
+
+}
+
+.icon-stop_watch:before {
+    content: '\eea5';
+
+}
+
+.icon-store:before {
+    content: '\eea6';
+
+}
+
+.icon-store_152:before {
+    content: '\eea7';
+
+}
+
+.icon-store_153:before {
+    content: '\eea8';
+
+}
+
+.icon-store_154:before {
+    content: '\eea9';
+
+}
+
+.icon-store_front:before {
+    content: '\eeaa';
+
+}
+
+.icon-store_shop:before {
+    content: '\eeab';
+
+}
+
+.icon-storehouse:before {
+    content: '\eeac';
+
+}
+
+.icon-strategy_dollar:before {
+    content: '\eead';
+
+}
+
+.icon-strategy_dollar_40:before {
+    content: '\eeae';
+
+}
+
+.icon-strategy_euro:before {
+    content: '\eeaf';
+
+}
+
+.icon-structure_graph:before {
+    content: '\eeb0';
+
+}
+
+.icon-sublet:before {
+    content: '\eeb1';
+
+}
+
+.icon-suitcase:before {
+    content: '\eeb2';
+
+}
+
+.icon-sun:before {
+    content: '\eeb3';
+
+}
+
+.icon-swimming_pool:before {
+    content: '\eeb4';
+
+}
+
+.icon-switch:before {
+    content: '\eeb5';
+
+}
+
+.icon-switch_37:before {
+    content: '\eeb6';
+
+}
+
+.icon-syringe:before {
+    content: '\eeb7';
+
+}
+
+.icon-t_shirt:before {
+    content: '\eeb8';
+
+}
+
+.icon-tag:before {
+    content: '\eeb9';
+
+}
+
+.icon-tag_50:before {
+    content: '\eeba';
+
+}
+
+.icon-tag_51:before {
+    content: '\eebb';
+
+}
+
+.icon-tag_fill:before {
+    content: '\eebc';
+
+}
+
+.icon-taj_mahal:before {
+    content: '\eebd';
+
+}
+
+.icon-takeoff:before {
+    content: '\eebe';
+
+}
+
+.icon-tall_house:before {
+    content: '\eebf';
+
+}
+
+.icon-tangent_tower:before {
+    content: '\eec0';
+
+}
+
+.icon-tape:before {
+    content: '\eec1';
+
+}
+
+.icon-target:before {
+    content: '\eec2';
+
+}
+
+.icon-target_goal:before {
+    content: '\eec3';
+
+}
+
+.icon-tax_day:before {
+    content: '\eec4';
+
+}
+
+.icon-taxes:before {
+    content: '\eec5';
+
+}
+
+.icon-taxi:before {
+    content: '\eec6';
+
+}
+
+.icon-tea:before {
+    content: '\eec7';
+
+}
+
+.icon-team:before {
+    content: '\eec8';
+
+}
+
+.icon-team_work:before {
+    content: '\eec9';
+
+}
+
+.icon-telecom:before {
+    content: '\eeca';
+
+}
+
+.icon-television:before {
+    content: '\eecb';
+
+}
+
+.icon-temple:before {
+    content: '\eecc';
+
+}
+
+.icon-temple_pyramid:before {
+    content: '\eecd';
+
+}
+
+.icon-ten_bill:before {
+    content: '\eece';
+
+}
+
+.icon-text_editor:before {
+    content: '\eecf';
+
+}
+
+.icon-the_white:before {
+    content: '\eed0';
+
+}
+
+.icon-theater:before {
+    content: '\eed1';
+
+}
+
+.icon-thin_pen:before {
+    content: '\eed2';
+
+}
+
+.icon-think_dollar:before {
+    content: '\eed3';
+
+}
+
+.icon-think_eurio:before {
+    content: '\eed4';
+
+}
+
+.icon-think_user:before {
+    content: '\eed5';
+
+}
+
+.icon-this_end:before {
+    content: '\eed6';
+
+}
+
+.icon-three_houses:before {
+    content: '\eed7';
+
+}
+
+.icon-ticket:before {
+    content: '\eed8';
+
+}
+
+.icon-tie_professional:before {
+    content: '\eed9';
+
+}
+
+.icon-time:before {
+    content: '\eeda';
+
+}
+
+.icon-time_is:before {
+    content: '\eedb';
+
+}
+
+.icon-time_management:before {
+    content: '\eedc';
+
+}
+
+.icon-time_management_59:before {
+    content: '\eedd';
+
+}
+
+.icon-time_passing:before {
+    content: '\eede';
+
+}
+
+.icon-timer_stop:before {
+    content: '\eedf';
+
+}
+
+.icon-timer_stop_32:before {
+    content: '\eee0';
+
+}
+
+.icon-toilet_paper:before {
+    content: '\eee1';
+
+}
+
+.icon-tor:before {
+    content: '\eee2';
+
+}
+
+.icon-tor_user:before {
+    content: '\eee3';
+
+}
+
+.icon-torn_price:before {
+    content: '\eee4';
+
+}
+
+.icon-torn_price_159:before {
+    content: '\eee5';
+
+}
+
+.icon-tors_house:before {
+    content: '\eee6';
+
+}
+
+.icon-total:before {
+    content: '\eee7';
+
+}
+
+.icon-tower:before {
+    content: '\eee8';
+
+}
+
+.icon-tower_bank:before {
+    content: '\eee9';
+
+}
+
+.icon-tower_company:before {
+    content: '\eeea';
+
+}
+
+.icon-tower_company_10:before {
+    content: '\eeeb';
+
+}
+
+.icon-tower_company_18:before {
+    content: '\eeec';
+
+}
+
+.icon-tower_company_19:before {
+    content: '\eeed';
+
+}
+
+.icon-town_houses:before {
+    content: '\eeee';
+
+}
+
+.icon-trade:before {
+    content: '\eeef';
+
+}
+
+.icon-trading:before {
+    content: '\eef0';
+
+}
+
+.icon-traffic_lights:before {
+    content: '\eef1';
+
+}
+
+.icon-train:before {
+    content: '\eef2';
+
+}
+
+.icon-transaction_a:before {
+    content: '\eef3';
+
+}
+
+.icon-transaction_b:before {
+    content: '\eef4';
+
+}
+
+.icon-transport_delivery:before {
+    content: '\eef5';
+
+}
+
+.icon-transport_forklift:before {
+    content: '\eef6';
+
+}
+
+.icon-transport_truck:before {
+    content: '\eef7';
+
+}
+
+.icon-trash:before {
+    content: '\eef8';
+
+}
+
+.icon-trashcan:before {
+    content: '\eef9';
+
+}
+
+.icon-travel_expense:before {
+    content: '\eefa';
+
+}
+
+.icon-travel_flag:before {
+    content: '\eefb';
+
+}
+
+.icon-tree_plant:before {
+    content: '\eefc';
+
+}
+
+.icon-trends:before {
+    content: '\eefd';
+
+}
+
+.icon-trolley:before {
+    content: '\eefe';
+
+}
+
+.icon-trolley_briefcase:before {
+    content: '\eeff';
+
+}
+
+.icon-trolley_empty:before {
+    content: '\ef00';
+
+}
+
+.icon-trolley_full:before {
+    content: '\ef01';
+
+}
+
+.icon-trolley_off:before {
+    content: '\ef02';
+
+}
+
+.icon-trolley_on:before {
+    content: '\ef03';
+
+}
+
+.icon-trolley_with:before {
+    content: '\ef04';
+
+}
+
+.icon-truck_delivery:before {
+    content: '\ef05';
+
+}
+
+.icon-truck_euro:before {
+    content: '\ef06';
+
+}
+
+.icon-truck_fast:before {
+    content: '\ef07';
+
+}
+
+.icon-truck_hours:before {
+    content: '\ef08';
+
+}
+
+.icon-truck_on:before {
+    content: '\ef09';
+
+}
+
+.icon-truck_shipping:before {
+    content: '\ef0a';
+
+}
+
+.icon-truck_transport:before {
+    content: '\ef0b';
+
+}
+
+.icon-truck_transport_89:before {
+    content: '\ef0c';
+
+}
+
+.icon-umbrella:before {
+    content: '\ef0d';
+
+}
+
+.icon-union_united:before {
+    content: '\ef0e';
+
+}
+
+.icon-university:before {
+    content: '\ef0f';
+
+}
+
+.icon-unlock:before {
+    content: '\ef10';
+
+}
+
+.icon-unlock_funds:before {
+    content: '\ef11';
+
+}
+
+.icon-up:before {
+    content: '\ef12';
+
+}
+
+.icon-update:before {
+    content: '\ef13';
+
+}
+
+.icon-upload_documents:before {
+    content: '\ef14';
+
+}
+
+.icon-usb_modem:before {
+    content: '\ef15';
+
+}
+
+.icon-usd:before {
+    content: '\ef16';
+
+}
+
+.icon-use:before {
+    content: '\ef17';
+
+}
+
+.icon-user:before {
+    content: '\ef18';
+
+}
+
+.icon-user_customer:before {
+    content: '\ef19';
+
+}
+
+.icon-user_male:before {
+    content: '\ef1a';
+
+}
+
+.icon-user_profile:before {
+    content: '\ef1b';
+
+}
+
+.icon-user_rating:before {
+    content: '\ef1c';
+
+}
+
+.icon-user_rating_47:before {
+    content: '\ef1d';
+
+}
+
+.icon-utility_knife:before {
+    content: '\ef1e';
+
+}
+
+.icon-value:before {
+    content: '\ef1f';
+
+}
+
+.icon-value_safe:before {
+    content: '\ef20';
+
+}
+
+.icon-vault:before {
+    content: '\ef21';
+
+}
+
+.icon-video_presentation:before {
+    content: '\ef22';
+
+}
+
+.icon-video_presentation_162:before {
+    content: '\ef23';
+
+}
+
+.icon-view:before {
+    content: '\ef24';
+
+}
+
+.icon-voucher:before {
+    content: '\ef25';
+
+}
+
+.icon-wallet:before {
+    content: '\ef26';
+
+}
+
+.icon-wallet_37:before {
+    content: '\ef27';
+
+}
+
+.icon-wallet_91:before {
+    content: '\ef28';
+
+}
+
+.icon-wallet_92:before {
+    content: '\ef29';
+
+}
+
+.icon-wallet_online:before {
+    content: '\ef2a';
+
+}
+
+.icon-wallet_plastic:before {
+    content: '\ef2b';
+
+}
+
+.icon-warehouse:before {
+    content: '\ef2c';
+
+}
+
+.icon-warehouse_es:before {
+    content: '\ef2d';
+
+}
+
+.icon-warning:before {
+    content: '\ef2e';
+
+}
+
+.icon-watch:before {
+    content: '\ef2f';
+
+}
+
+.icon-water_tap:before {
+    content: '\ef30';
+
+}
+
+.icon-water_tower:before {
+    content: '\ef31';
+
+}
+
+.icon-way_border:before {
+    content: '\ef32';
+
+}
+
+.icon-wc:before {
+    content: '\ef33';
+
+}
+
+.icon-wealth_accumulation:before {
+    content: '\ef34';
+
+}
+
+.icon-weather_cloud:before {
+    content: '\ef35';
+
+}
+
+.icon-web_cart:before {
+    content: '\ef36';
+
+}
+
+.icon-webstore_web:before {
+    content: '\ef37';
+
+}
+
+.icon-weight:before {
+    content: '\ef38';
+
+}
+
+.icon-weight_kg:before {
+    content: '\ef39';
+
+}
+
+.icon-weight_lbs:before {
+    content: '\ef3a';
+
+}
+
+.icon-wheel_chair:before {
+    content: '\ef3b';
+
+}
+
+.icon-wheelchair:before {
+    content: '\ef3c';
+
+}
+
+.icon-whiteboard:before {
+    content: '\ef3d';
+
+}
+
+.icon-wholesale:before {
+    content: '\ef3e';
+
+}
+
+.icon-wind_mill:before {
+    content: '\ef3f';
+
+}
+
+.icon-wind_wane:before {
+    content: '\ef40';
+
+}
+
+.icon-windmill:before {
+    content: '\ef41';
+
+}
+
+.icon-window:before {
+    content: '\ef42';
+
+}
+
+.icon-windows:before {
+    content: '\ef43';
+
+}
+
+.icon-windows_with:before {
+    content: '\ef44';
+
+}
+
+.icon-windsock:before {
+    content: '\ef45';
+
+}
+
+.icon-withdraw_money:before {
+    content: '\ef46';
+
+}
+
+.icon-wooden_crate:before {
+    content: '\ef47';
+
+}
+
+.icon-wooden_crate_165:before {
+    content: '\ef48';
+
+}
+
+.icon-wooden_crate_166:before {
+    content: '\ef49';
+
+}
+
+.icon-wooden_crate_167:before {
+    content: '\ef4a';
+
+}
+
+.icon-wooden_crate_168:before {
+    content: '\ef4b';
+
+}
+
+.icon-wooden_crate_169:before {
+    content: '\ef4c';
+
+}
+
+.icon-world:before {
+    content: '\ef4d';
+
+}
+
+.icon-world_hand:before {
+    content: '\ef4e';
+
+}
+
+.icon-world_wide:before {
+    content: '\ef4f';
+
+}
+
+.icon-wrapped_box:before {
+    content: '\ef50';
+
+}
+
+.icon-www_bars:before {
+    content: '\ef51';
+
+}
+
+.icon-www_visit:before {
+    content: '\ef52';
+
+}
+
+.icon-www_web:before {
+    content: '\ef53';
+
+}
+
+.icon-www_website:before {
+    content: '\ef54';
+
+}
+
+.icon-yen:before {
+    content: '\ef55';
+
+}
+
+.icon-yen_arrow:before {
+    content: '\ef56';
+
+}
+
+.icon-yen_banking:before {
+    content: '\ef57';
+
+}
+
+.icon-yen_coin:before {
+    content: '\ef58';
+
+}
+
+.icon-yen_currency:before {
+    content: '\ef59';
+
+}
+
+.icon-yen_hands:before {
+    content: '\ef5a';
+
+}
+
+.icon-yen_hands_50:before {
+    content: '\ef5b';
+
+}
+
+.icon-yen_money:before {
+    content: '\ef5c';
+}
+
