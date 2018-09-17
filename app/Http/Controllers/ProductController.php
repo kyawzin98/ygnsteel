@@ -16,6 +16,7 @@ class ProductController extends Controller
     public function index()
     {
         $data['products']=Product::all();
+        $data['a']=1;
         return view('product.productshow')->with($data);
     }
 
