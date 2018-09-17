@@ -37,11 +37,11 @@
                     </button>
                     <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light "  >
                         <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
-                            <li class="m-menu__item  m-menu__item--active  m-menu__item--active-tab  m-menu__item--submenu m-menu__item--tabs"  m-menu-submenu-toggle="tab" aria-haspopup="true">
+                            <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  m-menu-submenu-toggle="tab" aria-haspopup="true">
                                 <a  href="index.html" class="m-menu__link m-menu__toggle">
-												<span class="m-menu__link-text">
-													Dashboard
-												</span>
+                                    <span class="m-menu__link-text">
+                                        Dashboard
+                                    </span>
                                     <i class="m-menu__hor-arrow la la-angle-down"></i>
                                     <i class="m-menu__ver-arrow la la-angle-right"></i>
                                 </a>
@@ -52,32 +52,32 @@
                                             <a  href="builder.html" class="m-menu__link ">
                                                 <i class="m-menu__link-icon flaticon-support"></i>
                                                 <span class="m-menu__link-text">
-																Dashboard
-															</span>
+                                                    Dashboard
+                                                </span>
                                             </a>
                                         </li>
-                                        <li class="m-menu__item  m-menu__item--active "  aria-haspopup="true">
+                                        <li class="m-menu__item  "  aria-haspopup="true">
                                             <a  href="index.html" class="m-menu__link ">
                                                 <i class="m-menu__link-icon flaticon-file"></i>
                                                 <span class="m-menu__link-text">
-																Reports
-															</span>
+                                                    Reports
+                                                </span>
                                             </a>
                                         </li>
                                         <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
                                             <a  href="builder.html" class="m-menu__link ">
                                                 <i class="m-menu__link-icon flaticon-coins"></i>
                                                 <span class="m-menu__link-text">
-																Finance
-															</span>
+                                                    Finance
+                                                </span>
                                             </a>
                                         </li>
                                         <li class="m-menu__item  m-menu__item--submenu m-menu__item--submenu-tabs"  m-menu-submenu-toggle="click" aria-haspopup="true">
                                             <a  href="javascript:;" class="m-menu__link m-menu__toggle">
                                                 <i class="m-menu__link-icon flaticon-users"></i>
                                                 <span class="m-menu__link-text">
-																Customers
-															</span>
+                                                    Customers
+                                                </span>
                                                 <i class="m-menu__hor-arrow la la-angle-down"></i>
                                                 <i class="m-menu__ver-arrow la la-angle-right"></i>
                                             </a>
@@ -87,9 +87,9 @@
                                                     <ul class="m-menu__content">
                                                         <li class="m-menu__item">
                                                             <h3 class="m-menu__heading m-menu__toggle">
-																			<span class="m-menu__link-text">
-																				Finance Reports
-																			</span>
+                                                                <span class="m-menu__link-text">
+                                                                    Finance Reports
+                                                                </span>
                                                                 <i class="m-menu__ver-arrow la la-angle-right"></i>
                                                             </h3>
                                                             <ul class="m-menu__inner">
@@ -97,49 +97,49 @@
                                                                     <a  href="inner2.html" class="m-menu__link ">
                                                                         <i class="m-menu__link-icon flaticon-map"></i>
                                                                         <span class="m-menu__link-text">
-																						Annual Reports
-																					</span>
+                                                                            Annual Reports
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
                                                                     <a  href="inner2.html" class="m-menu__link ">
                                                                         <i class="m-menu__link-icon flaticon-user"></i>
                                                                         <span class="m-menu__link-text">
-																						HR Reports
-																					</span>
+                                                                            HR Reports
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
                                                                     <a  href="inner2.html" class="m-menu__link ">
                                                                         <i class="m-menu__link-icon flaticon-clipboard"></i>
                                                                         <span class="m-menu__link-text">
-																						IPO Reports
-																					</span>
+                                                                            IPO Reports
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
                                                                     <a  href="inner2.html" class="m-menu__link ">
                                                                         <i class="m-menu__link-icon flaticon-graphic-1"></i>
                                                                         <span class="m-menu__link-text">
-																						Finance Margins
-																					</span>
+                                                                            Finance Margins
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
                                                                     <a  href="inner2.html" class="m-menu__link ">
                                                                         <i class="m-menu__link-icon flaticon-graphic-2"></i>
                                                                         <span class="m-menu__link-text">
-																						Revenue Reports
-																					</span>
+                                                                            Revenue Reports
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li class="m-menu__item">
                                                             <h3 class="m-menu__heading m-menu__toggle">
-																			<span class="m-menu__link-text">
-																				Project Reports
-																			</span>
+                                                                <span class="m-menu__link-text">
+                                                                    Project Reports
+                                                                </span>
                                                                 <i class="m-menu__ver-arrow la la-angle-right"></i>
                                                             </h3>
                                                             <ul class="m-menu__inner">
@@ -149,8 +149,8 @@
                                                                             <span></span>
                                                                         </i>
                                                                         <span class="m-menu__link-text">
-																						Coca Cola CRM
-																					</span>
+                                                                            Coca Cola CRM
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
@@ -1029,31 +1029,27 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  m-menu-submenu-toggle="tab" aria-haspopup="true">
+                            <li class="m-menu__item  {{ Request::is('Admin/*') ? 'm-menu__item--active  m-menu__item--active-tab': '' }} m-menu__item--submenu m-menu__item--tabs"  m-menu-submenu-toggle="tab" aria-haspopup="true">
                                 <a  href="javascript:;" class="m-menu__link m-menu__toggle">
-												<span class="m-menu__link-text">
-													Tools
-												</span>
+                                    <span class="m-menu__link-text">Settings</span>
                                     <i class="m-menu__hor-arrow la la-angle-down"></i>
                                     <i class="m-menu__ver-arrow la la-angle-right"></i>
                                 </a>
                                 <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
                                     <span class="m-menu__arrow m-menu__arrow--adjust"></span>
                                     <ul class="m-menu__subnav">
-                                        <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
-                                            <a  href="inner.html" class="m-menu__link ">
+                                        <li class="m-menu__item  {{Request::is('Admin/User') ? ' m-menu__item--active':''}}"  m-menu-link-redirect="1" aria-haspopup="true">
+                                            <a  href="{{route('User.index')}}" class="m-menu__link ">
                                                 <i class="m-menu__link-icon flaticon-settings-1"></i>
-                                                <span class="m-menu__link-text">
-																Build Tools
-															</span>
+                                                <span class="m-menu__link-text">User</span>
                                             </a>
                                         </li>
-                                        <li class="m-menu__item "  aria-haspopup="true">
-                                            <a  href="builder.html" class="m-menu__link ">
+                                        <li class="m-menu__item {{Request::is('Admin/Product') ? ' m-menu__item--active':''}}"  aria-haspopup="true">
+                                            <a  href="{{route('Product.index')}}" class="m-menu__link ">
                                                 <i class="m-menu__link-icon flaticon-imac"></i>
                                                 <span class="m-menu__link-text">
-																Layout Builder
-															</span>
+                                                    Product
+                                                </span>
                                             </a>
                                         </li>
                                         <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
