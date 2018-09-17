@@ -4,6 +4,15 @@
         <form action="{{route('Product.update',$product->id)}}" method="POST">
             @csrf
             @method('PATCH')
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <input type="hidden" value="{{auth()->id()}}" name="user_by">
             <div class="form-group m-form__group">
                 <label for="productname">Product Name</label>

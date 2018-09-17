@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Product;
-use function GuzzleHttp\Promise\all;
+use App\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class ProductController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $data['products']=Product::all();
+        $data['users'] = User::all();
         $data['a']=1;
-        return view('product.productshow')->with($data);
+        return view('user.usershow')->with($data);
     }
 
     /**
@@ -27,8 +27,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-
-        return view('product.productinsert');
+        return view('user.userinsert');
     }
 
     /**
@@ -39,12 +38,18 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $validationdata=$request->validate([
-            'productname'=>'required|unique:products'
-        ]);
         $data = $request->except(['_token','add']);
-        Product::create($data);
-        return redirect(route('Product.index'));
+        $validatedata=$request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
+        User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => \Illuminate\Support\Facades\Hash::make($data['password'])
+        ]);
+        return redirect(route('User.index'));
     }
 
     /**
@@ -66,8 +71,8 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        $data['product']=Product::find($id);
-        return view('product.productedit')->with($data);
+        $data['user'] = User::find($id);
+        return view('user.useredit')->with($data);
     }
 
     /**
@@ -79,11 +84,10 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-        $product = Product::find($id);
-        $data=$request->except('_token','add');
-        $product->update($data);
-        return redirect(route('Product.index'));
+        $user = User::find($id);
+        $data = $request->except('_token','add');
+        $user->update($data);
+        return redirect(route('User.index'));
     }
 
     /**
@@ -94,7 +98,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        Product::destroy($id);
+        User::destroy($id);
         return redirect()->back();
     }
 }

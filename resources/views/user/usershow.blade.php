@@ -17,10 +17,10 @@
                         <!--begin::Widget 11-->
                         <div class="m-widget11">
                             <div class="m-widget11__action m--align-right">
-                                <a href="{{route('Product.create')}}">
+                                <a href="{{route('User.create')}}">
                                     <button type="button"
                                             class="btn m-btn--pill btn-accent m-btn m-btn--custom m-btn--hover-brand">
-                                        <i class="la la-plus"></i> Add New Product
+                                        <i class="la la-plus"></i> Add New User
                                     </button>
                                 </a>
                             </div>
@@ -34,10 +34,10 @@
                                             #
                                         </th>
                                         <th class="m-widget11__app">
-                                            Product Name
+                                            User Name
                                         </th>
                                         <th class="m-widget11__sales">
-                                            Weight/Kg
+                                            Email
                                         </th>
 
                                         <th class="m-widget11__sales">
@@ -51,35 +51,31 @@
                                     <!--end::Thead-->
                                     <!--begin::Tbody-->
                                     <tbody>
-
-                                    @foreach($products as $product)
+                                    @foreach($users as $user)
 
                                         <tr>
                                             <td class="m--font-brand">
                                                 {{$a++}}
                                             </td>
                                             <td>
-                                                <span class="m-widget11__title">{{$product->productname}}</span>
+                                                <span class="m-widget11__title">{{$user->name}}</span>
                                             </td>
                                             <td>
-                                                @if($product->weight == null)
-                                                    <span class="btn btn-primary">-</span>
-                                                    @else
-                                                    {{$product->weight}}
-                                                @endif
+
+                                                    {{$user->email}}
                                             </td>
                                             <td>
-                                                <a href="{{route('Product.edit',$product->id)}}">
+                                                <a href="{{route('User.edit',$user->id)}}">
                                                     <button class="btn btn-success"><i class="la la-pencil-square "></i> </button>
                                                 </a>
                                             </td>
                                             <td>
                                                 <a href="javascript:" class="btn btn-danger"
-                                                   onclick="event.preventDefault();document.getElementById('delete_task_{{$product->id}}').submit();">
+                                                   onclick="event.preventDefault();document.getElementById('delete_task_{{$user->id}}').submit();">
                                                     <i class="la la-close"></i>
                                                 </a>
-                                                <form id="delete_task_{{$product->id}}"
-                                                      action="{{ route('Product.destroy',$product->id) }}" method="POST"
+                                                <form id="delete_task_{{$user->id}}"
+                                                      action="{{ route('User.destroy',$user->id) }}" method="POST"
                                                       style="display: none;">
                                                     @csrf
                                                     @method('DELETE')
@@ -112,22 +108,4 @@
             </div>
         </div>
     </div>
-@endsection
-
-@section('script')
-    <script src="{{asset('js/app.js')}}" ?></script>
-    <script>
-        var app = new Vue({
-            el: '#main_product',
-            data: {
-                message: 'Hello Vue!',
-                jar: "Good"
-            },
-            methods: {
-                jar: function () {
-                    alert(9);
-                }
-            }
-        })
-    </script>
 @endsection
