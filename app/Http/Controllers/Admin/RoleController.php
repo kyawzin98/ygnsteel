@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Product;
-use function GuzzleHttp\Promise\all;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Spatie\Permission\Models\Role;
 
-class ProductController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +16,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $data['products']=Product::all();
-        $data['a']=1;
-        return view('product.productshow')->with($data);
+        $data['roles']=Role::all();
+        return view('role.role_lists')->with($data);
     }
 
     /**
@@ -27,8 +27,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-
-        return view('product.productinsert');
+        return view('role.add_role');
     }
 
     /**
@@ -39,12 +38,12 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $validationdata=$request->validate([
-            'productname'=>'required|unique:products'
+        $request->validate([
+            'name'=>'required|unique:roles|max:50'
         ]);
-        $data = $request->except(['_token','add']);
-        Product::create($data);
-        return redirect(route('Product.index'));
+        $data=$request->except(['_token']);
+        Role::create($data);
+        return redirect(route('Role.index'));
     }
 
     /**
@@ -66,8 +65,8 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        $data['product']=Product::find($id);
-        return view('product.productedit')->with($data);
+        $data['role']=Role::find($id);
+        return view('role.edit_role')->with($data);
     }
 
     /**
@@ -79,10 +78,14 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $product = Product::find($id);
-        $data=$request->except('_token','add');
-        $product->update($data);
-        return redirect(route('Product.index'));
+        $request->validate([
+            'name'=>'required|unique:roles|max:50'
+        ]);
+
+        $role=Role::find($id);
+        $data=$request->except(['_token']);
+        $role->update($data);
+        return redirect(route('Role.index'));
     }
 
     /**
@@ -93,7 +96,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        Product::destroy($id);
+        Role::destroy($id);
         return redirect()->back();
     }
 }

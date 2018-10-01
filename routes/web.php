@@ -18,9 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['middleware'=>['auth'],'prefix'=>'Admin'],function(){
-    Route::resource('Product','ProductController')->middleware('auth');
-    Route::resource('User','Admin\UserController')->middleware('auth');
+    Route::resource('Product','ProductController');
+    Route::resource('User','Admin\UserController');
+    Route::resource('Role','Admin\RoleController');
 });
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 
