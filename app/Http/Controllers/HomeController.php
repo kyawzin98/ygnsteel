@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $data['token']=true;
+        return view('dashboard')->with($data);
     }
 }

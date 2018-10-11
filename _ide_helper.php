@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.7.3 on 2018-09-14 09:48:41.
+ * Generated for Laravel 5.7.3 on 2018-10-11 15:01:07.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -13620,301 +13620,6 @@ namespace Illuminate\Support\Facades {
  
 }
 
-namespace Yajra\DataTables\Facades { 
-
-    /**
-     * 
-     *
-     * @mixin \Yajra\DataTables\DataTables
-     * @method static \Yajra\DataTables\EloquentDatatable eloquent($builder)
-     * @method static \Yajra\DataTables\QueryDataTable query($builder)
-     * @method static \Yajra\DataTables\CollectionDataTable collection($collection)
-     * @see \Yajra\DataTables\DataTables
-     */ 
-    class DataTables {
-        
-        /**
-         * Make a DataTable instance from source.
-         * 
-         * Alias of make for backward compatibility.
-         *
-         * @param mixed $source
-         * @return mixed 
-         * @throws \Exception
-         * @static 
-         */ 
-        public static function of($source)
-        {
-            return \Yajra\DataTables\DataTables::of($source);
-        }
-        
-        /**
-         * Make a DataTable instance from source.
-         *
-         * @param mixed $source
-         * @return mixed 
-         * @throws \Exception
-         * @static 
-         */ 
-        public static function make($source)
-        {
-            return \Yajra\DataTables\DataTables::make($source);
-        }
-        
-        /**
-         * Get request object.
-         *
-         * @return \Yajra\DataTables\Utilities\Request 
-         * @static 
-         */ 
-        public static function getRequest()
-        {
-            return \Yajra\DataTables\DataTables::getRequest();
-        }
-        
-        /**
-         * Get config instance.
-         *
-         * @return \Yajra\DataTables\Utilities\Config 
-         * @static 
-         */ 
-        public static function getConfig()
-        {
-            return \Yajra\DataTables\DataTables::getConfig();
-        }
-        
-        /**
-         * 
-         *
-         * @deprecated Please use query() instead, this method will be removed in a next version.
-         * @param $builder
-         * @return \Yajra\DataTables\QueryDataTable 
-         * @static 
-         */ 
-        public static function queryBuilder($builder)
-        {
-            return \Yajra\DataTables\DataTables::queryBuilder($builder);
-        }
-        
-        /**
-         * DataTables using Query.
-         *
-         * @param \Illuminate\Database\Query\Builder|mixed $builder
-         * @return \Yajra\DataTables\DataTableAbstract|\Yajra\DataTables\QueryDataTable 
-         * @static 
-         */ 
-        public static function query($builder)
-        {
-            return \Yajra\DataTables\DataTables::query($builder);
-        }
-        
-        /**
-         * DataTables using Eloquent Builder.
-         *
-         * @param \Illuminate\Database\Eloquent\Builder|mixed $builder
-         * @return \Yajra\DataTables\DataTableAbstract|\Yajra\DataTables\EloquentDataTable 
-         * @static 
-         */ 
-        public static function eloquent($builder)
-        {
-            return \Yajra\DataTables\DataTables::eloquent($builder);
-        }
-        
-        /**
-         * DataTables using Collection.
-         *
-         * @param \Illuminate\Support\Collection|array $collection
-         * @return \Yajra\DataTables\DataTableAbstract|\Yajra\DataTables\CollectionDataTable 
-         * @static 
-         */ 
-        public static function collection($collection)
-        {
-            return \Yajra\DataTables\DataTables::collection($collection);
-        }
-        
-        /**
-         * DataTables using Collection.
-         *
-         * @param \Illuminate\Http\Resources\Json\AnonymousResourceCollection|array $collection
-         * @return \Yajra\DataTables\DataTableAbstract|\Yajra\DataTables\ApiResourceDataTable 
-         * @static 
-         */ 
-        public static function resource($resource)
-        {
-            return \Yajra\DataTables\DataTables::resource($resource);
-        }
-        
-        /**
-         * Get html builder instance.
-         *
-         * @return \Yajra\DataTables\Html\Builder 
-         * @throws \Exception
-         * @static 
-         */ 
-        public static function getHtmlBuilder()
-        {
-            return \Yajra\DataTables\DataTables::getHtmlBuilder();
-        }
-        
-        /**
-         * Register a custom macro.
-         *
-         * @param string $name
-         * @param object|callable $macro
-         * @return void 
-         * @static 
-         */ 
-        public static function macro($name, $macro)
-        {
-            \Yajra\DataTables\DataTables::macro($name, $macro);
-        }
-        
-        /**
-         * Mix another object into the class.
-         *
-         * @param object $mixin
-         * @return void 
-         * @throws \ReflectionException
-         * @static 
-         */ 
-        public static function mixin($mixin)
-        {
-            \Yajra\DataTables\DataTables::mixin($mixin);
-        }
-        
-        /**
-         * Checks if macro is registered.
-         *
-         * @param string $name
-         * @return bool 
-         * @static 
-         */ 
-        public static function hasMacro($name)
-        {
-            return \Yajra\DataTables\DataTables::hasMacro($name);
-        }
-         
-    }
- 
-}
-
-namespace Maatwebsite\Excel\Facades { 
-
-    /**
-     * 
-     *
-     * @method static BinaryFileResponse download(object $export, string $fileName, string $writerType = null)
-     * @method static bool store(object $export, string $filePath, string $disk = null, string $writerType = null)
-     * @method static bool queue(object $export, string $filePath, string $disk = null, string $writerType = null)
-     * @method static void assertDownloaded(string $fileName, callable $callback = null)
-     * @method static void assertStored(string $filePath, string $disk = null, callable $callback = null)
-     * @method static void assertQueued(string $filePath, string $disk = null, callable $callback = null)
-     */ 
-    class Excel {
-        
-        /**
-         * 
-         *
-         * @param object $export
-         * @param string|null $fileName
-         * @param string $writerType
-         * @throws \PhpOffice\PhpSpreadsheet\Exception
-         * @throws \PhpOffice\PhpSpreadsheet\Writer\Exception
-         * @return \Maatwebsite\Excel\BinaryFileResponse 
-         * @static 
-         */ 
-        public static function download($export, $fileName, $writerType = null)
-        {
-            return \Maatwebsite\Excel\Excel::download($export, $fileName, $writerType);
-        }
-        
-        /**
-         * 
-         *
-         * @param object $export
-         * @param string $filePath
-         * @param string|null $disk
-         * @param string $writerType
-         * @throws \PhpOffice\PhpSpreadsheet\Exception
-         * @throws \PhpOffice\PhpSpreadsheet\Writer\Exception
-         * @return bool 
-         * @static 
-         */ 
-        public static function store($export, $filePath, $disk = null, $writerType = null)
-        {
-            return \Maatwebsite\Excel\Excel::store($export, $filePath, $disk, $writerType);
-        }
-        
-        /**
-         * 
-         *
-         * @param object $export
-         * @param string $filePath
-         * @param string|null $disk
-         * @param string $writerType
-         * @return \Maatwebsite\Excel\PendingDispatch 
-         * @static 
-         */ 
-        public static function queue($export, $filePath, $disk = null, $writerType = null)
-        {
-            return \Maatwebsite\Excel\Excel::queue($export, $filePath, $disk, $writerType);
-        }
-        
-        /**
-         * 
-         *
-         * @param string $concern
-         * @param callable $handler
-         * @param string $event
-         * @static 
-         */ 
-        public static function extend($concern, $handler, $event = 'Maatwebsite\Excel\Events\BeforeWriting')
-        {
-            return \Maatwebsite\Excel\Excel::extend($concern, $handler, $event);
-        }
-        
-        /**
-         * 
-         *
-         * @param string $fileName
-         * @param callable|null $callback
-         * @static 
-         */ 
-        public static function assertDownloaded($fileName, $callback = null)
-        {
-            return \Maatwebsite\Excel\Fakes\ExcelFake::assertDownloaded($fileName, $callback);
-        }
-        
-        /**
-         * 
-         *
-         * @param string $filePath
-         * @param string|callable|null $disk
-         * @param callable|null $callback
-         * @static 
-         */ 
-        public static function assertStored($filePath, $disk = null, $callback = null)
-        {
-            return \Maatwebsite\Excel\Fakes\ExcelFake::assertStored($filePath, $disk, $callback);
-        }
-        
-        /**
-         * 
-         *
-         * @param string $filePath
-         * @param string|callable|null $disk
-         * @param callable|null $callback
-         * @static 
-         */ 
-        public static function assertQueued($filePath, $disk = null, $callback = null)
-        {
-            return \Maatwebsite\Excel\Fakes\ExcelFake::assertQueued($filePath, $disk, $callback);
-        }
-         
-    }
- 
-}
-
 namespace DaveJamesMiller\Breadcrumbs\Facades { 
 
     /**
@@ -14128,6 +13833,301 @@ namespace DaveJamesMiller\Breadcrumbs\Facades {
         public static function hasMacro($name)
         {
             return \DaveJamesMiller\Breadcrumbs\BreadcrumbsManager::hasMacro($name);
+        }
+         
+    }
+ 
+}
+
+namespace Maatwebsite\Excel\Facades { 
+
+    /**
+     * 
+     *
+     * @method static BinaryFileResponse download(object $export, string $fileName, string $writerType = null)
+     * @method static bool store(object $export, string $filePath, string $disk = null, string $writerType = null)
+     * @method static bool queue(object $export, string $filePath, string $disk = null, string $writerType = null)
+     * @method static void assertDownloaded(string $fileName, callable $callback = null)
+     * @method static void assertStored(string $filePath, string $disk = null, callable $callback = null)
+     * @method static void assertQueued(string $filePath, string $disk = null, callable $callback = null)
+     */ 
+    class Excel {
+        
+        /**
+         * 
+         *
+         * @param object $export
+         * @param string|null $fileName
+         * @param string $writerType
+         * @throws \PhpOffice\PhpSpreadsheet\Exception
+         * @throws \PhpOffice\PhpSpreadsheet\Writer\Exception
+         * @return \Maatwebsite\Excel\BinaryFileResponse 
+         * @static 
+         */ 
+        public static function download($export, $fileName, $writerType = null)
+        {
+            return \Maatwebsite\Excel\Excel::download($export, $fileName, $writerType);
+        }
+        
+        /**
+         * 
+         *
+         * @param object $export
+         * @param string $filePath
+         * @param string|null $disk
+         * @param string $writerType
+         * @throws \PhpOffice\PhpSpreadsheet\Exception
+         * @throws \PhpOffice\PhpSpreadsheet\Writer\Exception
+         * @return bool 
+         * @static 
+         */ 
+        public static function store($export, $filePath, $disk = null, $writerType = null)
+        {
+            return \Maatwebsite\Excel\Excel::store($export, $filePath, $disk, $writerType);
+        }
+        
+        /**
+         * 
+         *
+         * @param object $export
+         * @param string $filePath
+         * @param string|null $disk
+         * @param string $writerType
+         * @return \Maatwebsite\Excel\PendingDispatch 
+         * @static 
+         */ 
+        public static function queue($export, $filePath, $disk = null, $writerType = null)
+        {
+            return \Maatwebsite\Excel\Excel::queue($export, $filePath, $disk, $writerType);
+        }
+        
+        /**
+         * 
+         *
+         * @param string $concern
+         * @param callable $handler
+         * @param string $event
+         * @static 
+         */ 
+        public static function extend($concern, $handler, $event = 'Maatwebsite\Excel\Events\BeforeWriting')
+        {
+            return \Maatwebsite\Excel\Excel::extend($concern, $handler, $event);
+        }
+        
+        /**
+         * 
+         *
+         * @param string $fileName
+         * @param callable|null $callback
+         * @static 
+         */ 
+        public static function assertDownloaded($fileName, $callback = null)
+        {
+            return \Maatwebsite\Excel\Fakes\ExcelFake::assertDownloaded($fileName, $callback);
+        }
+        
+        /**
+         * 
+         *
+         * @param string $filePath
+         * @param string|callable|null $disk
+         * @param callable|null $callback
+         * @static 
+         */ 
+        public static function assertStored($filePath, $disk = null, $callback = null)
+        {
+            return \Maatwebsite\Excel\Fakes\ExcelFake::assertStored($filePath, $disk, $callback);
+        }
+        
+        /**
+         * 
+         *
+         * @param string $filePath
+         * @param string|callable|null $disk
+         * @param callable|null $callback
+         * @static 
+         */ 
+        public static function assertQueued($filePath, $disk = null, $callback = null)
+        {
+            return \Maatwebsite\Excel\Fakes\ExcelFake::assertQueued($filePath, $disk, $callback);
+        }
+         
+    }
+ 
+}
+
+namespace Yajra\DataTables\Facades { 
+
+    /**
+     * 
+     *
+     * @mixin \Yajra\DataTables\DataTables
+     * @method static \Yajra\DataTables\EloquentDatatable eloquent($builder)
+     * @method static \Yajra\DataTables\QueryDataTable query($builder)
+     * @method static \Yajra\DataTables\CollectionDataTable collection($collection)
+     * @see \Yajra\DataTables\DataTables
+     */ 
+    class DataTables {
+        
+        /**
+         * Make a DataTable instance from source.
+         * 
+         * Alias of make for backward compatibility.
+         *
+         * @param mixed $source
+         * @return mixed 
+         * @throws \Exception
+         * @static 
+         */ 
+        public static function of($source)
+        {
+            return \Yajra\DataTables\DataTables::of($source);
+        }
+        
+        /**
+         * Make a DataTable instance from source.
+         *
+         * @param mixed $source
+         * @return mixed 
+         * @throws \Exception
+         * @static 
+         */ 
+        public static function make($source)
+        {
+            return \Yajra\DataTables\DataTables::make($source);
+        }
+        
+        /**
+         * Get request object.
+         *
+         * @return \Yajra\DataTables\Utilities\Request 
+         * @static 
+         */ 
+        public static function getRequest()
+        {
+            return \Yajra\DataTables\DataTables::getRequest();
+        }
+        
+        /**
+         * Get config instance.
+         *
+         * @return \Yajra\DataTables\Utilities\Config 
+         * @static 
+         */ 
+        public static function getConfig()
+        {
+            return \Yajra\DataTables\DataTables::getConfig();
+        }
+        
+        /**
+         * 
+         *
+         * @deprecated Please use query() instead, this method will be removed in a next version.
+         * @param $builder
+         * @return \Yajra\DataTables\QueryDataTable 
+         * @static 
+         */ 
+        public static function queryBuilder($builder)
+        {
+            return \Yajra\DataTables\DataTables::queryBuilder($builder);
+        }
+        
+        /**
+         * DataTables using Query.
+         *
+         * @param \Illuminate\Database\Query\Builder|mixed $builder
+         * @return \Yajra\DataTables\DataTableAbstract|\Yajra\DataTables\QueryDataTable 
+         * @static 
+         */ 
+        public static function query($builder)
+        {
+            return \Yajra\DataTables\DataTables::query($builder);
+        }
+        
+        /**
+         * DataTables using Eloquent Builder.
+         *
+         * @param \Illuminate\Database\Eloquent\Builder|mixed $builder
+         * @return \Yajra\DataTables\DataTableAbstract|\Yajra\DataTables\EloquentDataTable 
+         * @static 
+         */ 
+        public static function eloquent($builder)
+        {
+            return \Yajra\DataTables\DataTables::eloquent($builder);
+        }
+        
+        /**
+         * DataTables using Collection.
+         *
+         * @param \Illuminate\Support\Collection|array $collection
+         * @return \Yajra\DataTables\DataTableAbstract|\Yajra\DataTables\CollectionDataTable 
+         * @static 
+         */ 
+        public static function collection($collection)
+        {
+            return \Yajra\DataTables\DataTables::collection($collection);
+        }
+        
+        /**
+         * DataTables using Collection.
+         *
+         * @param \Illuminate\Http\Resources\Json\AnonymousResourceCollection|array $collection
+         * @return \Yajra\DataTables\DataTableAbstract|\Yajra\DataTables\ApiResourceDataTable 
+         * @static 
+         */ 
+        public static function resource($resource)
+        {
+            return \Yajra\DataTables\DataTables::resource($resource);
+        }
+        
+        /**
+         * Get html builder instance.
+         *
+         * @return \Yajra\DataTables\Html\Builder 
+         * @throws \Exception
+         * @static 
+         */ 
+        public static function getHtmlBuilder()
+        {
+            return \Yajra\DataTables\DataTables::getHtmlBuilder();
+        }
+        
+        /**
+         * Register a custom macro.
+         *
+         * @param string $name
+         * @param object|callable $macro
+         * @return void 
+         * @static 
+         */ 
+        public static function macro($name, $macro)
+        {
+            \Yajra\DataTables\DataTables::macro($name, $macro);
+        }
+        
+        /**
+         * Mix another object into the class.
+         *
+         * @param object $mixin
+         * @return void 
+         * @throws \ReflectionException
+         * @static 
+         */ 
+        public static function mixin($mixin)
+        {
+            \Yajra\DataTables\DataTables::mixin($mixin);
+        }
+        
+        /**
+         * Checks if macro is registered.
+         *
+         * @param string $name
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasMacro($name)
+        {
+            return \Yajra\DataTables\DataTables::hasMacro($name);
         }
          
     }
@@ -16509,11 +16509,11 @@ namespace  {
 
     class View extends \Illuminate\Support\Facades\View {}
 
-    class DataTables extends \Yajra\DataTables\Facades\DataTables {}
+    class Breadcrumbs extends \DaveJamesMiller\Breadcrumbs\Facades\Breadcrumbs {}
 
     class Excel extends \Maatwebsite\Excel\Facades\Excel {}
 
-    class Breadcrumbs extends \DaveJamesMiller\Breadcrumbs\Facades\Breadcrumbs {}
+    class DataTables extends \Yajra\DataTables\Facades\DataTables {}
  
 }
 
