@@ -108,7 +108,7 @@
                     }
 
                     axios.post(post_link,this.user)
-                        .then((result)=>{
+                        .then(result=>{
                             this.user.name='';
                             swal(result.data.success);
                         })

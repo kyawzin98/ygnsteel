@@ -3,15 +3,15 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
-                    {{$title or 'Sin Phyu Kyun'}}
+                    {{$title ?? 'Sin Phyu Kyun'}}
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <div class="m-scrollable" data-scrollbar-shown="true" data-scrollable="true" data-max-height="{{$height or '200'}}">
-                    {{$content or ''}}
+                <div class="m-scrollable" data-scrollbar-shown="true" data-scrollable="true" data-max-height="{{$height ?? '200'}}">
+                    {{$content ?? ''}}
                 </div>
             </div>
             <div class="modal-footer">
