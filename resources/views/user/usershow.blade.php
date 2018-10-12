@@ -41,7 +41,7 @@
                                         </th>
 
                                         <th class="m-widget11__sales">
-                                            Edit
+                                            Detail
                                         </th>
                                         <th class="m-widget11__sales">
                                             Delete
@@ -65,8 +65,11 @@
                                                     {{$user->email}}
                                             </td>
                                             <td>
-                                                <a href="{{route('User.edit',$user->id)}}">
-                                                    <button class="btn btn-success"><i class="la la-pencil-square "></i> </button>
+                                                {{--<a href="{{route('User.edit',$user->id)}}">--}}
+                                                    {{--<button class="btn btn-success"><i class="la la-pencil-square "></i> </button>--}}
+                                                {{--</a>--}}
+                                                <a href="{{route('UserDetail.show',$user->id)}}">
+                                                    <button class="btn btn-info"><i class="la la-info-circle "></i> </button>
                                                 </a>
                                             </td>
                                             <td>

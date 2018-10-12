@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\UserDetail;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class UserController extends Controller
+class UserDetailController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $data['users'] = User::all();
-        $data['a']=1;
-        return view('user.usershow')->with($data);
+
     }
 
     /**
@@ -27,8 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        $data['radio_data']=json_encode([['id'=>1,'name'=>'male','label'=>'Male'],['id'=>2,'name'=>'female','label'=>'female']]);
-        return view('user.userinsert')->with($data);
+        return view('user.add_user_detail');
     }
 
     /**
@@ -39,22 +37,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-
-        return response(['success'=>'User has been add.']);
-
-
-        $data = $request->except(['_token','add']);
-        $validatedata=$request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
-        User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => \Illuminate\Support\Facades\Hash::make($data['password'])
-        ]);
-        return redirect(route('User.index'));
+        //
     }
 
     /**
@@ -65,7 +48,9 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $data['user']=User::find($id);
+        $data['user_detail']=UserDetail::find($id);
+        return view('user.user_detail')->with($data);
     }
 
     /**
@@ -76,8 +61,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $data['user'] = User::find($id);
-        return view('user.useredit')->with($data);
+        //
     }
 
     /**
@@ -89,10 +73,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = User::find($id);
-        $data = $request->except('_token','add');
-        $user->update($data);
-        return redirect(route('User.index'));
+        //
     }
 
     /**
@@ -103,7 +84,6 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        User::destroy($id);
-        return redirect()->back();
+        //
     }
 }

@@ -3,9 +3,9 @@
         <div class="m-portlet__head-caption" data-toggle="collapse" data-target="#j_collapse">
             <div class="m-portlet__head-title text-center">
                 <h3 class="m-portlet__head-text text-center">
-                    {{$port_title or "port_title"}}
+                    {{$title ?? "port_title"}}
                     <small>
-                        {{$port_sub or ''}}
+                        {{$sub_title ?? ''}}
                     </small>
                 </h3>
             </div>
