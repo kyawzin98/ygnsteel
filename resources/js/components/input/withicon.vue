@@ -15,6 +15,7 @@
 
 <script>
     export default {
+        inject: ['$validator'],
         name: "withicon",
         props: {
             row: {

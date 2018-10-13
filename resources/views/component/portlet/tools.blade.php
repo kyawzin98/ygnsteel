@@ -1,4 +1,4 @@
-<div class="m-portlet m-portlet--head-solid-bg m-portlet--head-sm m-portlet--{{$color ?? 'primary'}}" m-portlet="true" data-portlet="true" style="" id="{{$id ??  ''}}">
+<div class="m-portlet m-portlet--head-solid-bg m-portlet--head-sm m-portlet--{{$color ?? 'primary'}} {{$head_class ?? ''}}" m-portlet="true" data-portlet="true" style="" id="{{$id ??  ''}}">
     <div class="m-portlet__head">
         <div class="m-portlet__head-caption">
             <div class="m-portlet__head-title">
