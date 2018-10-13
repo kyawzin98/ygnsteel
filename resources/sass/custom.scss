@@ -232,3 +232,10 @@ $jarbtn: (
 
   }
 }
+
+.m-wrapper{
+  @include responsive-below(740px){
+
+    padding: 10px 3px 10px 3px !important;
+  }
+}
