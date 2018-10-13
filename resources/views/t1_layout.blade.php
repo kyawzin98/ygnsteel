@@ -23,7 +23,7 @@
     <div class="m-grid__item m-grid__item--fluid  m-grid m-grid--ver-desktop m-grid--desktop m-page__container m-body">
         <div class="m-grid__item m-grid__item--fluid m-wrapper">
             <!-- BEGIN: Subheader -->
-        @include('theme_1.subheader')
+        {{--@include('theme_1.subheader')--}}
         <!-- END: Subheader -->
             <div class="m-content">
                 @section('content')

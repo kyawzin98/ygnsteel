@@ -37,6 +37,7 @@ Vue.component('j-input-icon', require('./components/input/withicon'));
 Vue.component('j-input-group', require('./components/input/group'));
 Vue.component('j-radio-group', require('./components/radio/multi'));
 Vue.component('j-switch-group', require('./components/switch/switch_main'));
+Vue.component('j-modal-material', require('./components/modal/material'));
 
 window.eventBus = new Vue();
 const app = new Vue({

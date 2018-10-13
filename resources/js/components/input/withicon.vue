@@ -38,7 +38,7 @@
                 default:'la la-bell'
             },
             icon_right:{
-                defalut:false
+                default:false
             },
             name:'',
             readonly:'',

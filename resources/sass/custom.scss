@@ -1,1 +1,234 @@
 //@import "~vuesax/dist/vuesax.css";
+@import "../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css";
+@import "../../node_modules/datatables.net-buttons-bs4/css/buttons.bootstrap4.css";
+@import "../../node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.css";
+@import "../../node_modules/datatables.net-select-bs4/css/select.bootstrap4.css";
+@import "../../node_modules/datatables.net-select-bs4/css/select.bootstrap4.css";
+@import "../../node_modules/datatables.net-keytable-bs4/css/keyTable.bootstrap4.css";
+@import "framework/config";
+@import "framework/base/functions";
+@import "framework/base/include";
+
+$info:#36a3f7;
+$acc:#00c5dc;
+$red-1:#f4516c;
+$jarbtn: (
+        secondary: #a6c,
+        primary:#0062cc,
+        default:#2bbbad,
+        warning :#f80 ,
+        danger: #ff3547,
+        info: #33b5e5,
+        success: #00c851,
+        accent:$acc
+);
+
+%ttmp {
+  webkit-box-shadow: 0px 5px 10px 2px rgba(244, 81, 108, 0.19);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(244, 81, 108, 0.19);
+  box-shadow: 0px 5px 10px 2px rgba(244, 81, 108, 0.19);
+  font-family: "Poppins";
+  cursor: pointer;
+  color: #fff;
+  background-image: none;
+  border-color: #00c5dc;
+}
+.dataTables_wrapper{
+  padding:0px !important;
+  margin:0px !important;
+}
+.my_table {
+  @each $element, $color in $jarbtn {
+    &--#{$element}{
+      & thead {
+        @extend %ttmp;
+        background: $color !important;
+      }
+    }
+  }
+  & th{
+    padding: 15px;
+  }
+  & thead {
+    @extend %ttmp;
+    @include gradient-bg($info,40deg,#2096ff,#05ffa3);
+  }
+  & tfoot {
+    @extend %ttmp;
+  }
+
+  & tbody td {
+
+    padding: .55rem;
+    vertical-align: inherit;
+    border: 1px solid #cbced1 !important;
+
+    @include desktop {
+      padding: 13px;
+    }
+  }
+  & td[class*="sorting_"] {
+    //background-color: rgba(0, 229, 255, 0.05) !important;
+    webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.19);
+
+    background-color: rgba(177, 186, 180, 0.22) !important;
+    border: 1px solid #fff !important;
+    //border-bottom-width: 1px;
+    //border-left-width: 1px;
+    //color: navy;
+    font-weight: 300;
+  }
+}
+
+.jTablePaginate {
+  & .dataTables_paginate .pagination > .page-item {
+    &:hover {
+      background: none;
+      //color: black !important;
+      //border-radius: 4px;
+      //border: 1px solid #828282;
+    }
+    &:active {
+      background: none;
+      color: black !important;
+    }
+
+    & .page-link {
+      cursor: pointer;
+      display: inline-block;
+      height: 2.25rem;
+      width: 2.25rem;
+      vertical-align: middle;
+      padding: 0;
+      text-align: center;
+      position: relative;
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 400;
+      @include border-radius(50%, ' !important');
+      @include flexbox();
+      @include flexbox-justify-content(center);
+      @include flexbox-align-items(center);
+
+      &:hover {
+        background-color: darken(#2ca189, 10%);
+        border-color: darken(#2ca189, 10%);
+        color: white;
+
+      }
+    }
+    &.active .page-link {
+      background: #2ca189 !important;
+      border-color: #2ca189 !important;
+      color: #ffffff !important;
+      cursor: pointer;
+      display: inline-block;
+      height: 2.25rem;
+      width: 2.25rem;
+      vertical-align: middle;
+      padding: 0;
+      text-align: center;
+      position: relative;
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 400;
+
+      @include border-radius(50%, ' !important');
+      @include flexbox();
+      @include flexbox-justify-content(center);
+      @include flexbox-align-items(center);
+
+    }
+
+  }
+  & .dataTables_paginate .pagination > .page-item > .page-link {
+
+  }
+}
+
+
+.jar_material{
+  .modal-header{
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15) !important;
+    margin: -2rem 1rem 1rem;
+    border: none;
+    border-radius: .125rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff !important;
+
+    &--bg1{
+      @include gradient-bg(40deg,40deg,#2096ff,#05ffa3);
+    }
+
+    &--bg2{
+      background-color: $info !important;
+    }
+    &:hover{
+      box-shadow: 0 5px 11px 0 rgba(0,0,0,.48),0 4px 15px 0 rgba(0,0,0,.35);
+    }
+    h5{
+      font-size: 1.5rem !important;
+    }
+    button{
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
+}
+
+.has-danger{
+  border: 1px solid $red-1;
+}
+
+.is-danger{
+  color: $red-1;
+}
+
+.jar-btn{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+  padding: .84rem 2.14rem;
+  font-size: 1.1rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  margin: .375rem;
+  border: 0;
+  webkit-border-radius: .125rem;
+  border-radius: .125rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  white-space: normal;
+  word-wrap: break-word;
+  font-weight: 400;
+  text-align: center;
+
+  &:not(:disabled):not(.disabled){
+    cursor: pointer;
+  }
+  &:hover{
+    webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+    outline: 0;
+    text-decoration: none;
+  }
+  @each $element, $color in $jarbtn {
+    &--#{$element} {
+    background-color: $color !important;
+    color: #fff !important;
+    }
+
+    &--#{$element}:hover{
+      background-color: lighten($color,10%) !important;
+      color: #fff;
+      border-color: darken($color,30%);
+    }
+
+  }
+}

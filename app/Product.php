@@ -11,4 +11,8 @@ class Product extends Model
     protected $fillable = [
         'productname', 'weight','user_by'
     ];
+
+    public function user(){
+        return $this->belongsTo(User::class,'user_by','id');
+    }
 }

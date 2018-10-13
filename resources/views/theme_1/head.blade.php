@@ -28,4 +28,11 @@
     <link rel="shortcut icon" href="{{asset('t1/assets/demo8/demo/media/img/logo/favicon.ico')}}" />
 
     @yield('style')
+    <script>
+        var j_base_url="{!! URL::to('') !!}";
+        var j_public_url="{!! public_path() !!}";
+        var j_storage_url="{!! storage_path() !!}";
+        var j_token="{{csrf_token()}}";
+
+    </script>
 </head>

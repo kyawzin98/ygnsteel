@@ -1,6 +1,14 @@
 @extends('t1_layout')
 @section('content')
     <div id="user_insert">
+
+        <button onclick="$('#m_modal_basic').modal('show')">Click</button>
+        @component('component.modal.my',['header_class'=>'bg1'])
+
+        @endcomponent
+
+        <button @click="show = true">Click</button>
+        <j-modal-material :option="show" id="jargyi" color="bg1"></j-modal-material>
         @component('component.portlet.base',['title'=>'User Form'])
             <form @submit.prevent="useradd">
                 <j-input-basic v-model="user.name" name="name" label="Username"></j-input-basic>
@@ -90,6 +98,7 @@
                     name:''
                 },
 
+                show:false,
                 value1:'',
                 gender:'female',
                 genders:[],
@@ -115,7 +124,15 @@
 
 
                 }
-            }
+            },
+            created(){
+                var ts=this;
+
+                eventBus.$on('close_modal',function (data) {
+                    ts.show=data;
+
+                })
+            },
         });
 
         // var user_insert=new Vue({

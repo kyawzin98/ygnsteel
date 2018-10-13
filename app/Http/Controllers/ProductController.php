@@ -6,6 +6,8 @@ use App\Product;
 use function GuzzleHttp\Promise\all;
 use Illuminate\Http\Request;
 
+
+
 class ProductController extends Controller
 {
     /**
@@ -27,8 +29,10 @@ class ProductController extends Controller
      */
     public function create()
     {
+        $product=Product::with('user')->get();
+        return \DataTables::of($product)->make();
 
-        return view('product.productinsert');
+//        return view('product.productinsert');
     }
 
     /**
@@ -40,11 +44,15 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $validationdata=$request->validate([
-            'productname'=>'required|unique:products'
+            'name'=>'required|unique:products,productname'
         ]);
-        $data = $request->except(['_token','add']);
-        Product::create($data);
-        return redirect(route('Product.index'));
+        $insert=[
+            'productname'=>$request->name,
+            'weight'=>$request->weight,
+            'user_by'=>auth()->id(),
+        ];
+        Product::create($insert);
+        return response(['success'=>'Product Name.'.$request->name.' has been added.'],200);
     }
 
     /**
@@ -94,6 +102,6 @@ class ProductController extends Controller
     public function destroy($id)
     {
         Product::destroy($id);
-        return redirect()->back();
+        return response(['success'=>'Product has been removed.'],200);
     }
 }
