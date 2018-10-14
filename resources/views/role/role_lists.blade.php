@@ -1,77 +1,125 @@
 @extends('t1_layout')
 @section('content')
-    <div class="row">
-        <div class="col-md-12 mx-auto">
-            <div class="m-portlet">
-
-                <div class="m-portlet__head">
-                    <div class="m-portlet__head-caption">
-                        <div class="m-portlet__head-title">
-                            <h3 class="m-portlet__head-text">
-                                List of Roles
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="m-portlet__head-caption">
-                        <a href="{{route('Role.create')}}" class="btn btn-primary">
-                            <span class="fa fa-plus">&ensp;Add New Role</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="m-portlet__body">
-                    <!--begin::Section-->
-                    <div class="m-section">
-                        <div class="m-section__content">
-                            <table class="table m-table m-table--head-separator-primary text-center">
-                                <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Role Name</th>
-                                    <th colspan="2">Action</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($roles as $role)
-                                    <tr>
-                                        <th>{{$role->id}}</th>
-                                        <td>{{$role->name}}</td>
-                                        <td>
-                                            <a href="{{route('Role.edit',$role->id)}}" class="btn btn-accent">
-                                                <span class="la la-pencil-square"></span>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="javascript:" class="btn btn-danger"
-                                               onclick="return checkDelete();">
-                                                <i class="la la-times"></i>
-                                            </a>
-                                            <script>
-                                                function checkDelete() {
-                                                    if (confirm('Sure want to delete this role!')) {
-                                                        document.getElementById('delete_role_{{$role->id}}').submit();
-                                                    } else {
-                                                        event.preventDefault();
-                                                    }
-                                                }
-                                            </script>
-                                            <form id="delete_role_{{$role->id}}"
-                                                  action="{{ route('Role.destroy',$role->id) }}" method="POST"
-                                                  style="display: none;">
-                                                @csrf
-                                                @method('DELETE')
-                                            </form>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <!--end::Section-->
-                </div>
-                <!--end::Form-->
+    <div id="main_role">
+        @component('component.portlet.creative',['title'=>'Roles','head_class'=>'mt-0'])
+            <div class="d-flex ">
+                <button type="button" onclick="$('#add_roles').modal('show')"
+                        class="jar-btn jar-btn--default ml-auto">
+                    <i class="la la-plus"></i> Add New Product
+                </button>
             </div>
-        </div>
+
+            <div class="row">
+                <div class="col-12">
+                    @component('component.datatable.table',['id'=>'role_table'])
+                        @slot('th')
+                            <th class="">ID</th>
+                            <th class="">Role Name</th>
+                            <th class="">gurad</th>
+                            <th class="">Edit</th>
+                        @endslot
+                    @endcomponent
+                </div>
+            </div>
+        @endcomponent
+        @component('component.modal.my',['id'=>'add_roles','title'=>'Add New Role'])
+            <form id="main_add" @submit.prevent="add_role" method="post">
+                <j-input-basic v-model="role.name" v-validate="'required'" name="name" :value="role.name" label="Role Name">
+                </j-input-basic>
+                <div class="modal-footer justify-content-center">
+                    <button type="submit" class="btn btn-info m-btn m-btn--custom m-btn--air">
+                        submit
+                    </button>
+                </div>
+            </form>
+        @endcomponent
     </div>
+@endsection
+@section('script')
+    <script>
+        var post_url = "{{route('Role.store')}}";
+
+        var app = new Vue({
+            el: '#main_role',
+            data: {
+                role: {
+                    name: ''
+                }
+            },
+            mounted(){
+                var old = $('#role_table').jDatatable({
+                    url: post_url+'/create',
+                    method:'GET',
+                    columns: [
+                        {data: 'id', name: 'id', className: 'text-center jsearch all'},
+                        {data: 'name', name: 'name', className: 'text-center jsearch all'},
+                        {data: 'guard_name', name: 'guard_name', className: 'text-center all'},
+                        {className: 'text-center',
+                            "render": function ( data, type, row, meta ) {
+                                return `<a href="${post_url}/${row.id}/edit" class="btn btn-accent m-btn m-btn--icon btn-lg m-btn--icon-only">
+										<i class="flaticon-edit-1"></i>
+									</a>
+									<a href="javascript:" data-url="${post_url}/${row.id}" class="btn btn-danger m-btn m-btn--icon btn-lg m-btn--icon-only del">
+										<i class="flaticon-delete-1"</i>
+									</a>`;
+                            },
+                            orderable:false
+                        },
+
+                    ],
+                    delete_btn: false,
+                    edit_modal: true,
+                    "stateSave": true,
+                });
+
+                var ta = this;
+                var individual_search_table = $('#role_table').DataTable();
+
+                $('#role_table tbody').on('click', '.del', function (e) {
+                    var del_url=$(this).data('url');
+                    axios.delete(del_url)
+                        .then((result)=>{
+                            success_song.play();
+                            toastr.success(result.data.success, 'Successful!');
+                            material_componet.reload_dt();
+                        })
+                });
+
+            },
+
+            methods: {
+                add_role:function () {
+                    this.$validator.validateAll().then((res)=>{
+                        if (res){
+                            var block_id = '#add_roles';
+                            mApp.block(block_id, {
+                                overlayColor: '#000000',
+                                state: 'primary'
+                            });
+
+                            axios.post(post_url,this.role)
+                                .then((result)=>{
+                                    mApp.unblock(block_id);
+                                    success_song.play();
+                                    toastr.success(result.data.success, 'Successful!');
+                                    material_componet.reload_dt();
+                                    this.$validator.reset();
+                                    this.role={
+                                        name: '',
+                                    };
+                                    $(block_id).modal('hide');
+                                }).catch((res)=> {
+                                mApp.unblock(block_id);
+                                toastr.error(res.response.data.message, 'Error!');
+                                error_song.play();
+                            });
+                        } else {
+                            error_song.play();
+                            toastr.error('Error! Try Again,Check the input', "Fill all field.");
+                        }
+                    })
+                }
+            }
+        });
+    </script>
 @endsection
