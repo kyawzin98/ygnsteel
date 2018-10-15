@@ -69,7 +69,7 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
-        $data['role']=Role::find($id);
+        $data['role']=Role::find($id) ?? abort('404');
         return view('role.edit_role')->with($data);
     }
 

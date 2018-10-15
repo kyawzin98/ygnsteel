@@ -95,7 +95,7 @@
                                 state: 'primary'
                             });
 
-                            axios.post(post_url,this.role)
+                            axios.post(post_url,this.permission)
                                 .then((result)=>{
                                     mApp.unblock(block_id);
                                     success_song.play();
