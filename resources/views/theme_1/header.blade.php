@@ -1147,6 +1147,15 @@
                                                 </span>
                                             </a>
                                         </li>
+                                        <li class="m-menu__item {{Request::is('Admin/Permission') ? ' m-menu__item--active':''}}"
+                                            aria-haspopup="true">
+                                            <a href="{{route('Permission.index')}}" class="m-menu__link ">
+                                                <i class="m-menu__link-icon flaticon-users"></i>
+                                                <span class="m-menu__link-text">
+                                                    Permissions
+                                                </span>
+                                            </a>
+                                        </li>
                                         <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true">
                                             <a href="inner.html" class="m-menu__link ">
                                                 <i class="m-menu__link-icon flaticon-paper-plane"></i>
