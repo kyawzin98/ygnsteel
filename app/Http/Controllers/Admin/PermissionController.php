@@ -81,6 +81,11 @@ class PermissionController extends Controller
         $request->validate([
            'name'=>'required|unique:permissions|max:50'
         ]);
+
+        $permission=Permission::find($id);
+        $data=$request->except(['_token']);
+        $permission->update($data);
+        return redirect(route('Permission.index'));
     }
 
     /**
