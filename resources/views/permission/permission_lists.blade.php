@@ -2,9 +2,9 @@
 @section('content')
     <div id="main_permission">
         @component('component.portlet.creative',['title'=>'Permissions','head_class'=>'mt-0'])
-            <div class="d-flex ">
+            <div class="d-flex justify-content-sm-end justify-content-center">
                 <button type="button" onclick="$('#add_permissions').modal('show')"
-                        class="jar-btn jar-btn--default ml-auto">
+                        class="jar-btn jar-btn--default">
                     <i class="la la-plus"></i> Add New Permission
                 </button>
             </div>
@@ -14,7 +14,8 @@
                     @component('component.datatable.table',['id'=>'permission_table'])
                         @slot('th')
                             <th class="">ID</th>
-                            <th class="">Role Name</th>
+                            <th class="">Permission Name</th>
+                            <th class="">Guard</th>
                             <th class="">Edit</th>
                         @endslot
                     @endcomponent
@@ -23,7 +24,8 @@
         @endcomponent
         @component('component.modal.my',['id'=>'add_permissions','title'=>'Add New Permission'])
             <form id="main_add" @submit.prevent="add_permission" method="post">
-                <j-input-basic v-model="permission.name" v-validate="'required'" name="name" :value="permission.name" label="Permission Name">
+                <j-input-basic v-model="permission.name" v-validate="'required'" name="Permssion Name"
+                               :value="permission.name" label="Permission Name">
                 </j-input-basic>
                 <div class="modal-footer justify-content-center">
                     <button type="submit" class="btn btn-info m-btn m-btn--custom m-btn--air">
@@ -52,6 +54,7 @@
                     columns: [
                         {data: 'id', name: 'id', className: 'text-center jsearch all'},
                         {data: 'name', name: 'name', className: 'text-center jsearch all'},
+                        {data: 'guard_name', name: 'guard_name', className: 'text-center jsearch all'},
                         {className: 'text-center',
                             "render": function ( data, type, row, meta ) {
                                 return `<a href="${post_url}/${row.id}/edit" class="btn btn-accent m-btn m-btn--icon btn-lg m-btn--icon-only">

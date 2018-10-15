@@ -1,4 +1,4 @@
-<div class="modal fade" id="m_modal_scroll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="{{$id ?? 'm_modal_scroll'}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -11,7 +11,8 @@
             </div>
             <div class="modal-body">
                 <div class="m-scrollable" data-scrollbar-shown="true" data-scrollable="true" data-max-height="{{$height ?? '200'}}">
-                    {{$content ?? ''}}
+                    {{--{{$content ?? ''}}--}}
+                    {{$slot}}
                 </div>
             </div>
             <div class="modal-footer">

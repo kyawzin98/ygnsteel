@@ -43,7 +43,7 @@ class PermissionController extends Controller
         ]);
 
         Permission::create($request->all());
-        return response(['success','Permission Name .'.$request->name.' has been added.'],200);
+        return response(['success'=>'Permission Name .'.$request->name.' has been added.'],200);
     }
 
     /**
@@ -97,6 +97,6 @@ class PermissionController extends Controller
     public function destroy($id)
     {
         Permission::destroy($id);
-        return response(['success','Permission has been removed'],200);
+        return response(['success'=>'Permission has been removed'],200);
     }
 }
