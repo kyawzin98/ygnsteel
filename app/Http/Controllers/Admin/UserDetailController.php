@@ -49,7 +49,6 @@ class UserDetailController extends Controller
     public function show($id)
     {
         $data['user']=User::find($id);
-        $data['user_detail']=UserDetail::find($id);
         return view('user.user_detail')->with($data);
     }
 
