@@ -23,6 +23,7 @@ Route::group(['middleware'=>['auth'],'prefix'=>'Admin'],function(){
     Route::resource('UserDetail','Admin\UserDetailController');
     Route::resource('Role','Admin\RoleController');
     Route::resource('Permission','Admin\PermissionController');
+    Route::resource('RolePermission','Admin\RolePermissionController');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
