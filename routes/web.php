@@ -24,8 +24,12 @@ Route::group(['middleware'=>['auth'],'prefix'=>'Admin'],function(){
     Route::resource('Role','Admin\RoleController');
     Route::resource('Permission','Admin\PermissionController');
     Route::resource('RolePermission','Admin\RolePermissionController');
+
 });
 
+Route::group(['prefix'=>'Users'],function (){
+    Route::resource('UserPost','User\Post');
+});
 Route::get('/home', 'HomeController@index')->name('home');
 
 

@@ -1,6 +1,18 @@
 @extends('t1_layout')
 @section('content')
     <div id="user_main">
+        @component('component.alert.simple')
+
+
+        @slot('text_head')
+        <button type="button" class="btn btn-primary">GOod</button>
+        @endslot
+
+
+
+        User is not found.
+        @endcomponent
+
         @component('component.portlet.tools',['title'=>'Users','icon'=>'flaticon-avatar','color'=>'accent','head_class'=>'jar_box2'])
 
             <div class="d-flex justify-content-sm-end justify-content-center">
