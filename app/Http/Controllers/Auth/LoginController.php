@@ -51,19 +51,17 @@ class LoginController extends Controller
 
     public function handleProviderCallback()
     {
-        $social_data = Socialite::driver('facebook')->user();
+        if($social_data = Socialite::driver('facebook')->user()){
+            $user=User::firstOrCreate(
+                ['email' => $social_data->email],
+                ['name' => $social_data->name, 'password' => bcrypt(1234)]
+            );
 
-        $user = new User();
-        $user->firstOrCreate(
-            [
-                'email' => $social_data->email,
-            ],
-            [
-                'name' => $social_data->name,
-                'password' => bcrypt(1234)
-            ]);
+            \Auth::login($user);
+            return redirect('/home');
+        }else{
+            return redirect()->back();
+        };
 
-        \Auth::login($user);
-        return redirect('/home');
     }
 }
