@@ -60,21 +60,21 @@
 
                         <hr style="border-top: 1px solid gray;">
                         <div class="m-login__form-action">
-                            <a href="#" class="btn btn-primary btn-lg m-btn  m-btn m-btn--icon d-block mb-4">
+                            <a href="{{route('Social','facebook')}}" class="btn btn-primary btn-lg m-btn  m-btn m-btn--icon d-block mb-4">
                                 <span class="d-flex justify-content-center">
-                                    <i class="fa socicon-facebook"></i>
+                                    <i class="fa socicon-facebook"  style="font-size: 24px"></i>
                                     <span>Facebook</span>
                                 </span>
                             </a>
-                            <a href="#" class="btn btn-primary btn-lg m-btn  m-btn m-btn--icon d-block mb-4" style="background-color: rgb(29,160,240)">
+                            <a href="{{route('Social','twitter')}}" class="btn btn-primary btn-lg m-btn  m-btn m-btn--icon d-block mb-4" style="background-color: rgb(29,160,240)">
                                 <span class="d-flex justify-content-center">
-                                    <i class="fa socicon-twitter text-light"></i>
+                                    <i class="fa socicon-twitter text-light"  style="font-size: 24px"></i>
                                     <span class="text-light">Twitter</span>
                                 </span>
                             </a>
-                            <a href="#" class="btn btn-lg m-btn  m-btn m-btn--icon d-block mb-4" style="background-color: rgb(215,70,59)">
+                            <a href="{{route('Social','google')}}" class="btn btn-lg m-btn  m-btn m-btn--icon d-block mb-4" style="background-color: rgb(215,70,59)">
                                 <span class="d-flex justify-content-center">
-                                    <i class="fa socicon-googleplus text-light"></i>
+                                    <i class="fa socicon-googleplus text-light" style="font-size: 24px"></i>
                                     <span class="text-light">Google Plus</span>
                                 </span>
                             </a>
