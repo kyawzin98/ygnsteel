@@ -49,7 +49,7 @@ class LoginController extends Controller
         return Socialite::driver('facebook')->redirect();
     }
 
-    public function handleProviderCallback(\Request $request)
+    public function handleProviderCallback()
     {
         try {
             $socialUser = Socialite::driver('facebook')->user();
@@ -57,9 +57,7 @@ class LoginController extends Controller
         catch (Exception $e) {
             return redirect ('/');
         }
-        if (!$request->has('code') || $request->has('denied')) {
-            return redirect('/');
-        }
+
         $user=User::firstOrCreate(
             ['email' => $socialUser->getEmail()],
             ['name' => $socialUser->getName(), 'password' => bcrypt(1234)]
