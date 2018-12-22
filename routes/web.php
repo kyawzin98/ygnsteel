@@ -33,4 +33,8 @@ Route::group(['prefix'=>'Users'],function (){
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
+Route::get('login/twitter', 'Auth\LoginController@redirectToProviderTwitter');
+Route::get('login/google', 'Auth\LoginController@redirectToProviderGoogle');
 Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('login/twitter/callback', 'Auth\LoginController@handleProviderCallbackTwitter');
+Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallbackGoogle');
