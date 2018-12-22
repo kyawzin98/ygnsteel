@@ -53,8 +53,8 @@ class LoginController extends Controller
     {
         if($social_data = Socialite::driver('facebook')->user()){
             $user=User::firstOrCreate(
-                ['email' => $social_data->email],
-                ['name' => $social_data->name, 'password' => bcrypt(1234)]
+                ['email' => $social_data->getEmail()],
+                ['name' => $social_data->getName(), 'password' => bcrypt(1234)]
             );
 
             \Auth::login($user);
