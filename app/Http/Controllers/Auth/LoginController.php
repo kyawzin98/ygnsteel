@@ -44,26 +44,16 @@ class LoginController extends Controller
         return view('login');
     }
 
-    public function redirectToProvider()
+    public function redirectToProvider($service)
     {
-        return Socialite::driver('facebook')->redirect();
-    }
-
-    public function redirectToProviderTwitter()
-    {
-        return Socialite::driver('twitter')->redirect();
-    }
-
-    public function redirectToProviderGoogle()
-    {
-        return Socialite::driver('google')->redirect();
+        return Socialite::driver($service)->redirect();
     }
 
 
-    public function handleProviderCallback()
+    public function handleProviderCallback($service)
     {
         try {
-            $socialUser = Socialite::driver('facebook')->user();
+            $socialUser = Socialite::driver($service)->user();
         }
         catch (Exception $e) {
             return redirect ('/');
@@ -79,41 +69,5 @@ class LoginController extends Controller
 
     }
 
-    public function handleProviderCallbackTwitter()
-    {
-        try {
-            $socialUser = Socialite::driver('twitter')->user();
-        }
-        catch (Exception $e) {
-            return redirect ('/');
-        }
 
-        $user=User::firstOrCreate(
-            ['email' => $socialUser->getEmail()],
-            ['name' => $socialUser->getName(), 'password' => bcrypt(1234)]
-        );
-
-        auth()->login($user);
-        return redirect('/home');
-
-    }
-
-    public function handleProviderCallbackGoogle()
-    {
-        try {
-            $socialUser = Socialite::driver('google')->stateless()->user();
-        }
-        catch (Exception $e) {
-            return redirect ('/');
-        }
-
-        $user=User::firstOrCreate(
-            ['email' => $socialUser->getEmail()],
-            ['name' => $socialUser->getName(), 'password' => bcrypt(1234)]
-        );
-
-        auth()->login($user);
-        return redirect('/home');
-
-    }
 }
