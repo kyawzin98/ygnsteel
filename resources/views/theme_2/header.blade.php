@@ -51,7 +51,7 @@
                     <div class="m-stack__item m-topbar__nav-wrapper">
                         <ul class="m-topbar__nav m-nav m-nav--inline">
 
-{{--                            @include('theme_2.top_nav.settings')--}}
+                            @include('theme_2.top_nav.profile')
                         </ul>
                     </div>
                 </div>

@@ -1,74 +1,78 @@
 @extends('t2_layout')
+@section('style')
+@endsection
 @section('content')
-
     <div id="user_post">
-        @component('component.portlet.base',['title'=>'User Post','color'=>'default'])
-            <ul class="list-group m--visible-tablet-and-mobile">
-                <li class="list-group-item active text-center">Products</li>
-                <li class="list-group-item list-group-item-primary">
-                    <v-select label="name" :filterable="false" :options="options" v-model="users" id="users"
-                              @search="onSearch">
-                        <template slot="option" slot-scope="option">
-                            <div class="d-center">
-                                @{{ option.productname }}
-                                <br>
-                                Weight:
-                                <small>@{{ option.weight }}</small>
-                            </div>
-                        </template>
-                        <template slot="selected-option" slot-scope="option">
-                            <div class="selected d-center">
-                                @{{ option.productname }}
-                            </div>
-                        </template>
-                    </v-select>
-                </li>
-                <li class="list-group-item active text-center">Quantity</li>
-                <li class="list-group-item list-group-item-primary">
-                    <j-input-basic v-model="qty" :value="qty" in_size="small p-0 m-0 w-100"
-                                   row="col-sm-12 p-0"></j-input-basic>
-                </li>
-            </ul>
-        <div class="col-12 m--visible-desktop">
-            <table class="table table-bordered ">
-                <thead>
-                <tr>
-                    <th class="text-center">Products</th>
-                    <th class="text-center">Qty</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="p-0">
-                        <v-select label="name" :filterable="false" :options="options" v-model="users" id="users"
-                                  @search="onSearch">
-                            <template slot="option" slot-scope="option">
-                                <div class="d-center">
-                                    @{{ option.productname }}
-                                    <br>
-                                    Weight:
-                                    <small>@{{ option.weight }}</small>
-                                </div>
-                            </template>
-                            <template slot="selected-option" slot-scope="option">
-                                <div class="selected d-center">
-                                    @{{ option.productname }}
-                                </div>
-                            </template>
-                        </v-select>
-                    </td>
-                    <td class="p-0">
-                        <j-input-basic v-model="qty" :value="qty" in_size="small p-0 m-0 w-100"
-                                       row="col-sm-12 p-0"></j-input-basic>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+        <div class="row">
+            <div class="col-6 mx-auto">
+                @component('component.portlet.base',['title'=>'User Post','color'=>'default','head_off'=>false])
+                    <ul class="list-group m--visible-tablet-and-mobile">
+                        <li class="list-group-item active text-center">Products</li>
+                        <li class="list-group-item list-group-item-primary">
+                            <v-select label="name" :filterable="false" :options="options" v-model="users" id="users"
+                                      @search="onSearch">
+                                <template slot="option" slot-scope="option">
+                                    <div class="d-center">
+                                        @{{ option.productname }}
+                                        <br>
+                                        Weight:
+                                        <small>@{{ option.weight }}</small>
+                                    </div>
+                                </template>
+                                <template slot="selected-option" slot-scope="option">
+                                    <div class="selected d-center">
+                                        @{{ option.productname }}
+                                    </div>
+                                </template>
+                            </v-select>
+                        </li>
+                        <li class="list-group-item active text-center">Quantity</li>
+                        <li class="list-group-item list-group-item-primary">
+                            <j-input-basic v-model="qty" :value="qty" in_size="small p-0 m-0 w-100"
+                                           row="col-sm-12 p-0"></j-input-basic>
+                        </li>
+                    </ul>
+                    <div class="col-12 m--visible-desktop">
+                        <table class="table table-bordered ">
+                            <thead>
+                            <tr>
+                                <th class="text-center">Products</th>
+                                <th class="text-center">Qty</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="p-0">
+                                    <v-select label="name" :filterable="false" :options="options" v-model="users" id="users"
+                                              @search="onSearch">
+                                        <template slot="option" slot-scope="option">
+                                            <div class="d-center">
+                                                @{{ option.productname }}
+                                                <br>
+                                                Weight:
+                                                <small>@{{ option.weight }}</small>
+                                            </div>
+                                        </template>
+                                        <template slot="selected-option" slot-scope="option">
+                                            <div class="selected d-center">
+                                                @{{ option.productname }}
+                                            </div>
+                                        </template>
+                                    </v-select>
+                                </td>
+                                <td class="p-0">
+                                    <j-input-basic v-model="qty" :value="qty" in_size="small p-0 m-0 w-100"
+                                                   row="col-sm-12 p-0"></j-input-basic>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                @endcomponent
+            </div>
         </div>
 
-
-
-        @endcomponent
 
 
     </div>

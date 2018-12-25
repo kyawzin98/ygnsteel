@@ -314,33 +314,27 @@
                     </ul>
                 </div>
             </li>
-            <li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">
-                <a  href="inner.html" class="m-menu__link ">
-                    <span class="m-menu__item-here"></span>
-                    <i class="m-menu__link-icon flaticon-cogwheel"></i>
-                    <span class="m-menu__link-text">
-										Files
-									</span>
-                </a>
-            </li>
-            <li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">
-                <a  href="inner.html" class="m-menu__link ">
-                    <span class="m-menu__item-here"></span>
-                    <i class="m-menu__link-icon flaticon-lifebuoy"></i>
-                    <span class="m-menu__link-text">
-										Security
-									</span>
-                </a>
-            </li>
-            <li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">
-                <a  href="inner.html" class="m-menu__link ">
-                    <span class="m-menu__item-here"></span>
-                    <i class="m-menu__link-icon flaticon-settings"></i>
-                    <span class="m-menu__link-text">
-										Options
-									</span>
-                </a>
-            </li>
+            {{--<li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">--}}
+                {{--<a  href="inner.html" class="m-menu__link ">--}}
+                    {{--<span class="m-menu__item-here"></span>--}}
+                    {{--<i class="m-menu__link-icon flaticon-cogwheel"></i>--}}
+                    {{--<span class="m-menu__link-text">Files</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
+            {{--<li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">--}}
+                {{--<a  href="inner.html" class="m-menu__link ">--}}
+                    {{--<span class="m-menu__item-here"></span>--}}
+                    {{--<i class="m-menu__link-icon flaticon-lifebuoy"></i>--}}
+                    {{--<span class="m-menu__link-text">Security</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
+            {{--<li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">--}}
+                {{--<a  href="inner.html" class="m-menu__link ">--}}
+                    {{--<span class="m-menu__item-here"></span>--}}
+                    {{--<i class="m-menu__link-icon flaticon-settings"></i>--}}
+                    {{--<span class="m-menu__link-text">Options</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
         </ul>
     </div>
     <!-- END: Aside Menu -->
