@@ -15,7 +15,8 @@ class Post extends Controller
      */
     public function index()
     {
-        return view('UserPost.index');
+        $data['sub_head']=false;
+        return view('UserPost.index')->with($data);
     }
 
     /**

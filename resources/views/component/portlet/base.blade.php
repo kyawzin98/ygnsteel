@@ -1,4 +1,4 @@
-<div class="m-portlet m-portlet--mobile m-portlet--accent m-portlet--head-solid-bg">
+<div class="m-portlet m-portlet--mobile m-portlet--{{$color ?? 'accent'}} m-portlet--head-solid-bg">
     <div class="m-portlet__head jportlet__head">
         <div class="m-portlet__head-caption" data-toggle="collapse" data-target="#j_collapse">
             <div class="m-portlet__head-title text-center">

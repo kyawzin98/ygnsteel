@@ -1,20 +1,5 @@
-@extends('t1_layout')
+@extends('t2_layout')
 @section('content')
-    {{--@component('component.portlet.creative',['title'=>'Edit Permission'])--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-8">--}}
-                {{--<form action="{{route('Permission.update',$permission->id)}}" method="post">--}}
-                    {{--@csrf--}}
-                    {{--<div class="form-group">--}}
-                        {{--<label>Permission Name</label>--}}
-                        {{--<input type="text" class="form-control" name="name" placeholder="Enter Permission">--}}
-                    {{--</div>--}}
-                    {{--<button type="submit" class="btn btn-primary">Submit</button>--}}
-                {{--</form>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--@endcomponent--}}
-
     <div class="row">
         <div class="col-md-8 mx-auto">
             <div class="m-portlet m-portlet--tab">

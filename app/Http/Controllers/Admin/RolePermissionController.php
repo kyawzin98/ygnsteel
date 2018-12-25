@@ -18,6 +18,7 @@ class RolePermissionController extends Controller
     {
         $data['roles']=Role::all();
         $data['permissions']=Permission::all();
+        $data['sub_head']=false;
         return view('role_permission.role_permission')->with($data);
     }
 
@@ -30,9 +31,14 @@ class RolePermissionController extends Controller
     {
         $role=Role::with('permissions')->get();
         return \DataTables::of($role)
-            ->editColumn('gurd_name',function () use ($role){
-                $role()->permissions()->pluck('name');
-            })->make();
+            ->addColumn('role_permission',function (Role $role){
+                if ($role->permissions->pluck('name')->count()){
+                    return implode(', ',$role->permissions->pluck('name')->toArray());
+                }else{
+                    return '-';
+                }
+            })
+            ->make();
     }
 
     /**
@@ -91,6 +97,6 @@ class RolePermissionController extends Controller
      */
     public function destroy($id)
     {
-        //
+
     }
 }

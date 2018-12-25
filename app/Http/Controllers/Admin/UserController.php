@@ -16,6 +16,7 @@ class UserController extends Controller
     public function index()
     {
         $data['users'] = User::all();
+        $data['sub_head'] = false;
         $data['a']=1;
         return view('user.usershow')->with($data);
     }
@@ -76,6 +77,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $data['user'] = User::find($id);
+        $data['sub_head'] =false;
         return view('user.useredit')->with($data);
     }
 

@@ -1,4 +1,4 @@
-@extends('t1_layout')
+@extends('t2_layout')
 @section('content')
     <div id="main_role_permission">
         @component('component.portlet.creative',['title'=>'Role Permission','head_class'=>'mt-0'])
@@ -16,7 +16,7 @@
                             <th class="">ID</th>
                             <th class="">Role Name</th>
                             <th class="">Permission Name</th>
-                            <th class="">Edit</th>
+                            {{--<th class="">Edit</th>--}}
                         @endslot
                     @endcomponent
                 </div>
@@ -61,18 +61,18 @@
                     columns: [
                         {data: 'id', name: 'id', className: 'text-center jsearch all'},
                         {data: 'name', name: 'name', className: 'text-center jsearch all'},
-                        {data: 'guard_name', name: 'guard_name', className: 'text-center all'},
-                        {className: 'text-center',
-                            "render": function ( data, type, row, meta ) {
-                                return `<a href="${post_url}/${row.id}/edit" class="btn btn-accent m-btn m-btn--icon btn-lg m-btn--icon-only">
-										<i class="flaticon-edit-1"></i>
-									</a>
-									<a href="javascript:" data-url="${post_url}/${row.id}" class="btn btn-danger m-btn m-btn--icon btn-lg m-btn--icon-only del">
-										<i class="flaticon-delete-1"</i>
-									</a>`;
-                            },
-                            orderable:false
-                        },
+                        {data: 'role_permission', name: 'role_permission', className: 'text-center jsearch all'},
+                        // {className: 'text-center',
+                        //     "render": function ( data, type, row, meta ) {
+                        //         return `<a href="${post_url}/${row.id}/edit" class="btn btn-accent m-btn m-btn--icon btn-lg m-btn--icon-only">
+							// 			<i class="flaticon-edit-1"></i>
+							// 		</a>
+							// 		<a href="javascript:" data-url="${post_url}/${row.id}" class="btn btn-danger m-btn m-btn--icon btn-lg m-btn--icon-only del">
+							// 			<i class="flaticon-delete-1"</i>
+							// 		</a>`;
+                        //     },
+                        //     orderable:false
+                        // },
 
                     ],
                     delete_btn: false,

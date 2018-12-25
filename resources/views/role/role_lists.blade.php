@@ -1,4 +1,4 @@
-@extends('t1_layout')
+@extends('t2_layout')
 @section('content')
     <div id="main_role">
         @component('component.portlet.creative',['title'=>'Roles','head_class'=>'mt-0'])

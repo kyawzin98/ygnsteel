@@ -17,6 +17,7 @@ class RoleController extends Controller
     public function index()
     {
         $data['roles']=Role::all();
+        $data['sub_head']=false;
         return view('role.role_lists')->with($data);
     }
 
@@ -70,6 +71,7 @@ class RoleController extends Controller
     public function edit($id)
     {
         $data['role']=Role::find($id) ?? abort('404');
+        $data['sub_head']=false;
         return view('role.edit_role')->with($data);
     }
 

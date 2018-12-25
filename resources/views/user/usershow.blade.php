@@ -1,41 +1,34 @@
-@extends('t1_layout')
+@extends('t2_layout')
 @section('content')
     <div id="user_main">
-        @component('component.alert.simple')
-
-
-        @slot('text_head')
-        <button type="button" class="btn btn-primary">GOod</button>
-        @endslot
-
-
-
-        User is not found.
-        @endcomponent
-
         @component('component.portlet.tools',['title'=>'Users','icon'=>'flaticon-avatar','color'=>'accent','head_class'=>'jar_box2'])
-
-            <div class="d-flex justify-content-sm-end justify-content-center">
-                <button type="button" onclick="$('#add_products').modal('show')"
-                        class="jar-btn jar-btn--default">
-                    <i class="la la-plus"></i> Add New User
-                </button>
-            </div>
-
-
             <div class="row">
-                <div class="col-12 p-0">
-                    @component('component.datatable.table',['id'=>'user_table','head_class'=>'default'])
-                        @slot('th')
-                            <th class="" style="width: 5%">ID</th>
-                            <th class="">Username</th>
-                            <th class="" style="width: 10%">Email</th>
-                            <th class="" style="min-width: 50px;">Edit</th>
-                        @endslot
-                    @endcomponent
-                </div>
+                <div class="col-12">
+                    <div class="d-flex justify-content-sm-end justify-content-center">
+                        <button type="button" onclick="$('#add_products').modal('show')"
+                                class="jar-btn jar-btn--default">
+                            <i class="la la-plus"></i> Add New User
+                        </button>
+                    </div>
 
+
+                    <div class="row">
+                        <div class="col-12 p-0">
+                            @component('component.datatable.table',['id'=>'user_table','head_class'=>'default'])
+                                @slot('th')
+                                    <th class="" style="width: 5%">ID</th>
+                                    <th class="">Username</th>
+                                    <th class="" style="width: 10%">Email</th>
+                                    <th class="" style="min-width: 50px;">Edit</th>
+                                @endslot
+                            @endcomponent
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
+
         @endcomponent
         @component('component.modal.my',['id'=>'add_products','title'=>'Add new Product'])
             <form id="add_user" @submit.prevent="add_user" method="post">

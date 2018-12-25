@@ -1,4 +1,4 @@
-@extends('t1_layout')
+@extends('t2_layout')
 @section('content')
     <div id="main_product">
         @component('component.portlet.creative',['title'=>'Products','head_class'=>'mt-0'])
