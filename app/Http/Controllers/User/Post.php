@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Models\UserSell;
+use App\Models\UserSellDetail;
 use App\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -38,7 +40,23 @@ class Post extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $new_sell=UserSell::create([
+            'title'=>$request->title,
+            'description'=>$request->description,
+            'post_by'=>auth()->id(),
+        ]);
+        $product_id='';
+        foreach ($request->main as $k=>$item){
+            if ($item['new_product']){
+                $product=Product::updateOrCreate(['productname'=>$item['product']['productname'], 'weight'=>$item['weight']],['user_by'=>auth()->id()]);
+                $product_id=$product->id;
+            }else{
+                $product_id=$item['product']['id'];
+            }
+            UserSellDetail::create(['user_sell_id'=>$new_sell->id,'product_id'=>$product_id,'price'=>$item['price'],'qty'=>$item['qty']]);
+        }
+
+        return response(['success'=>'New Post has been created.']);
     }
 
     /**
