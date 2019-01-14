@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard_new');
+        $data['sub_head']=false;
+        return view('dashboard_new')->with($data);
     }
 }
