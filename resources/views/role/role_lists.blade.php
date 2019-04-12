@@ -1,8 +1,12 @@
-@extends('t1_layout')
+@extends('t2_layout')
 @section('content')
     <div id="main_role">
         @component('component.portlet.creative',['title'=>'Roles','head_class'=>'mt-0'])
+<<<<<<< HEAD
             <div class="d-flex ">
+=======
+            <div class="d-flex justify-content-sm-end justify-content-center">
+>>>>>>> 2051cf8fc991459ccddd42a5bcbc321a00d83060
                 <button type="button" onclick="$('#add_roles').modal('show')"
                         class="jar-btn jar-btn--default ml-auto">
                     <i class="la la-plus"></i> Add New Product

@@ -19,6 +19,7 @@ class ProductController extends Controller
     {
         $data['products']=Product::all();
         $data['a']=1;
+        $data['sub_head']=false;
         return view('product.productshow')->with($data);
     }
 

@@ -1,7 +1,7 @@
 <template>
     <div :class="row">
         <div class="form-group m-form__group">
-            <label :for="id" :class="{'is-danger': errors.has(name)}" v-if="label">{{label}}</label>
+            <label :for="id" :class="[{'is-danger': errors.has(name)},label_class]" v-if="label">{{label}}</label>
             <div class="m-input-icon" :class="[icon_position_head,inputSize]">
                 <input class="form-control m-input" :type="type" :class="{'has-danger': errors.has(name),'m-input--air':air}" :id="id"
                        :name="name" :readonly="readonly" :disabled="disabled" :placeholder="placeholder" v-bind="$attrs"
@@ -15,6 +15,7 @@
 
 <script>
     export default {
+        inject: ['$validator'],
         name: "withicon",
         props: {
             row: {
@@ -36,6 +37,9 @@
             },
             icon:{
                 default:'la la-bell'
+            },
+            label_class:{
+                default:''
             },
             icon_right:{
                 default:false

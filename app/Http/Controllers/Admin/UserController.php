@@ -16,6 +16,7 @@ class UserController extends Controller
     public function index()
     {
         $data['users'] = User::all();
+        $data['sub_head'] = false;
         $data['a']=1;
         return view('user.usershow')->with($data);
     }
@@ -27,8 +28,10 @@ class UserController extends Controller
      */
     public function create()
     {
-        $data['radio_data']=json_encode([['id'=>1,'name'=>'male','label'=>'Male'],['id'=>2,'name'=>'female','label'=>'female']]);
-        return view('user.userinsert')->with($data);
+        $user=User::get();
+        return \DataTables::of($user)->make();
+//        $data['radio_data']=json_encode([['id'=>1,'name'=>'male','label'=>'Male'],['id'=>2,'name'=>'female','label'=>'female']]);
+//        return view('user.userinsert')->with($data);
     }
 
     /**
@@ -40,21 +43,18 @@ class UserController extends Controller
     public function store(Request $request)
     {
 
-        return response(['success'=>'User has been add.']);
-
-
         $data = $request->except(['_token','add']);
         $validatedata=$request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+            'password' => 'required|string|min:6',
         ]);
         User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => \Illuminate\Support\Facades\Hash::make($data['password'])
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => \Illuminate\Support\Facades\Hash::make($request->password)
         ]);
-        return redirect(route('User.index'));
+        return response(['success'=>'User name'.$request->name.' has been created'],200);
     }
 
     /**
@@ -77,6 +77,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $data['user'] = User::find($id);
+        $data['sub_head'] =false;
         return view('user.useredit')->with($data);
     }
 
@@ -104,6 +105,6 @@ class UserController extends Controller
     public function destroy($id)
     {
         User::destroy($id);
-        return redirect()->back();
+        return response(['success'=>'User has been deleted.']);
     }
 }

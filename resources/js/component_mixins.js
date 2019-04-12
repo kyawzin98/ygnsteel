@@ -40,6 +40,7 @@ export default {
         readonly: '',
         disabled: '',
         placeholder: '',
+        onepadding: '',
         value: '',
         input_class: '',
         val: '',
@@ -126,9 +127,9 @@ export default {
                 return this.row;
             }
         },
-        // o_check: function () {
-        //     this.$emit('input', this.newchecked);
-        // },
+        o_check: function () {
+            this.$emit('input', this.newchecked);
+        },
         onlyOne:function () {
             if(typeof this.val == 'undefined'){
                 return true;

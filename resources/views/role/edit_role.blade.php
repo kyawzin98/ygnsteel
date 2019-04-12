@@ -1,4 +1,4 @@
-@extends('t1_layout')
+@extends('t2_layout')
 @section('content')
     <div class="container">
         <div class="row">

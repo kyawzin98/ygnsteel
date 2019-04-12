@@ -17,6 +17,7 @@ class RoleController extends Controller
     public function index()
     {
         $data['roles']=Role::all();
+        $data['sub_head']=false;
         return view('role.role_lists')->with($data);
     }
 
@@ -27,9 +28,15 @@ class RoleController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
         $role=Role::get();
         return \DataTables::of($role)->make();
 //        return view('role.add_role');
+=======
+//        return view('role.add_role');
+        $role=Role::get();
+        return \DataTables::of($role)->make();
+>>>>>>> 2051cf8fc991459ccddd42a5bcbc321a00d83060
     }
 
     /**
@@ -44,10 +51,17 @@ class RoleController extends Controller
             'name'=>'required|unique:roles|max:50'
         ]);
 //        $data=$request->except(['_token']);
+<<<<<<< HEAD
         Role::create($request->all());
 //        return redirect(route('Role.index'));
 
         return response(['success'=>'Role Name.'.$request->name.' has been added.'],200);
+=======
+//        Role::create($data);
+//        return redirect(route('Role.index'));
+        Role::create($request->all());
+        return response(['success'=>'Role Name .'.$request->name.' has been added.'],200);
+>>>>>>> 2051cf8fc991459ccddd42a5bcbc321a00d83060
     }
 
     /**
@@ -69,7 +83,8 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
-        $data['role']=Role::find($id);
+        $data['role']=Role::find($id) ?? abort('404');
+        $data['sub_head']=false;
         return view('role.edit_role')->with($data);
     }
 
@@ -104,4 +119,5 @@ class RoleController extends Controller
 //        return redirect()->back();
         return response(['success'=>'Role has been removed.'],200);
     }
+
 }

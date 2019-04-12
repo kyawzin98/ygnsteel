@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\UserSell;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $data['token']=true;
-        return view('dashboard')->with($data);
+        $data['sub_head']=false;
+        $data['sells']=UserSell::with('user','detail.product')->orderBy('id','desc')->get();
+        return view('dashboard_new')->with($data);
     }
 }

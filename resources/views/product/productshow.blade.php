@@ -1,23 +1,23 @@
-@extends('t1_layout')
+@extends('t2_layout')
 @section('content')
     <div id="main_product">
         @component('component.portlet.creative',['title'=>'Products','head_class'=>'mt-0'])
 
-            <div class="d-flex ">
+            <div class="d-flex justify-content-sm-end justify-content-center">
                 <button type="button" onclick="$('#add_products').modal('show')"
-                        class="jar-btn jar-btn--default ml-auto">
+                        class="jar-btn jar-btn--default">
                     <i class="la la-plus"></i> Add New Product
                 </button>
             </div>
 
 
             <div class="row">
-                <div class="col-12">
-                    @component('component.datatable.table',['id'=>'product_table'])
+                <div class="col-12 p-0">
+                    @component('component.datatable.table',['id'=>'product_table','head_class'=>'default'])
                         @slot('th')
-                            <th class="">ID</th>
+                            <th class="" style="width: 5%">ID</th>
                             <th class="">Name</th>
-                            <th class="">Weight</th>
+                            <th class="" style="width: 10%">Weight</th>
                             <th class="">Edit</th>
                         @endslot
                     @endcomponent
@@ -39,6 +39,7 @@
             </form>
 
         @endcomponent
+<<<<<<< HEAD
 
         <div class="col-xl-12 mx-auto">
             <div class="m-portlet m-portlet--full-height  m-portlet--rounded">
@@ -153,6 +154,8 @@
             </div>
         </div>
 
+=======
+>>>>>>> 2051cf8fc991459ccddd42a5bcbc321a00d83060
     </div>
 
 @endsection
@@ -177,7 +180,7 @@
                     columns: [
                         {data: 'id', name: 'id', className: 'text-center jsearch all'},
                         {data: 'productname', name: 'productname', className: 'text-center jsearch all'},
-                        {data: 'weight', name: 'weight', className: 'text-center jsearch all'},
+                        {data: 'weight', name: 'weight', className: 'text-center jsearch'},
                         {className: 'text-center',
                             "render": function ( data, type, row, meta ) {
                             return `<a href="${post_url}/${row.id}/edit" class="btn btn-accent m-btn m-btn--icon btn-lg m-btn--icon-only">
@@ -193,15 +196,6 @@
                     ],
                     delete_btn: false,
                     edit_modal: true,
-                    "stateSave": true,
-                    // "stateSaveParams": function (settings, data) {
-                    //     console.log(data.columns);
-                    //     data.columns.forEach((result)=>{
-                    //         result.search.search='';
-                    //         console.log(result.search.search);
-                    //     })
-                    //     data.search.search = "";
-                    // }
                 });
 
                 var ta = this;
@@ -246,12 +240,6 @@
                                 toastr.error(res.response.data.message, 'Error!');
                                 error_song.play();
                             });
-
-                            // this.data_po[edit_id].quantity=this.update.name;
-                            // mApp.unblock(block_id);
-                            // success_song.play();
-                            // $(block_id).modal('hide');
-                            // this.$forceUpdate();
                         } else {
                             error_song.play();
                             toastr.error('Error! Try Again,Check the input', "Fill all field.");

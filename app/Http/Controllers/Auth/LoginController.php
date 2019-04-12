@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
 {
@@ -41,4 +43,31 @@ class LoginController extends Controller
     {
         return view('login');
     }
+
+    public function redirectToProvider($service)
+    {
+        return Socialite::driver($service)->redirect();
+    }
+
+
+    public function handleProviderCallback($service)
+    {
+        try {
+            $socialUser = Socialite::driver($service)->user();
+        }
+        catch (Exception $e) {
+            return redirect ('/');
+        }
+
+        $user=User::firstOrCreate(
+            ['email' => $socialUser->getEmail()],
+            ['name' => $socialUser->getName(), 'password' => bcrypt(1234)]
+        );
+
+        auth()->login($user);
+        return redirect('/home');
+
+    }
+
+
 }
