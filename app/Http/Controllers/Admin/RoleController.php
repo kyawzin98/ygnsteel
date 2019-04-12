@@ -27,7 +27,9 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('role.add_role');
+        $role=Role::get();
+        return \DataTables::of($role)->make();
+//        return view('role.add_role');
     }
 
     /**
@@ -41,9 +43,11 @@ class RoleController extends Controller
         $request->validate([
             'name'=>'required|unique:roles|max:50'
         ]);
-        $data=$request->except(['_token']);
-        Role::create($data);
-        return redirect(route('Role.index'));
+//        $data=$request->except(['_token']);
+        Role::create($request->all());
+//        return redirect(route('Role.index'));
+
+        return response(['success'=>'Role Name.'.$request->name.' has been added.'],200);
     }
 
     /**
@@ -97,6 +101,7 @@ class RoleController extends Controller
     public function destroy($id)
     {
         Role::destroy($id);
-        return redirect()->back();
+//        return redirect()->back();
+        return response(['success'=>'Role has been removed.'],200);
     }
 }
